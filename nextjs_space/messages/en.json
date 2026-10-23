@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "siteName": "Mehmet Kum",
+    "title": "Mehmet Kum — Computer Engineer, Public Administrator",
+    "description": "A personal portfolio combining computer engineering, public administration and firefighting experience.",
+    "home": {
+      "title": "Mehmet Kum — Computer Engineer, Public Administrator",
+      "description": "18 years in the public sector and firefighting, now shipping SaaS products on the side."
+    },
+    "resume": {
+      "title": "Resume — Mehmet Kum",
+      "description": "A chronology of education, firefighting and leadership roles at ASKı."
+    },
+    "articles": {
+      "title": "Articles — Mehmet Kum",
+      "description": "Writing on technology, public administration and emergency response."
+    },
+    "gallery": {
+      "title": "Gallery — Mehmet Kum",
+      "description": "Frames from firefighting, software projects and personal moments."
+    },
+    "projects": {
+      "title": "Projects — Mehmet Kum",
+      "description": "Software projects including İPEK Baca CRM and SimaLogistic SaaS."
+    },
+    "contact": {
+      "title": "Contact — Mehmet Kum",
+      "description": "Reach out about a project, a collaboration or anything on your mind."
+    },
+    "admin": {
+      "title": "Admin Panel — Mehmet Kum",
+      "description": "Manage the content of this site."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "articles": "Articles",
+    "gallery": "Gallery",
+    "projects": "Projects",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "talk": "Let's talk"
+  },
+  "hero": {
+    "eyebrow": "Portfolio — 2026",
+    "title": "MEHMET KUM",
+    "subtitle": "Computer Engineer · Public Administrator · Fire Chief",
+    "scroll": "Scroll",
+    "keywords": [
+      "SOFTWARE",
+      "FIREFIGHTING",
+      "PUBLIC ADMIN",
+      "EMERGENCY",
+      "SAAS",
+      "TÜRKİYE"
+    ]
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "An engineer who writes code, fights fires and runs a city.",
+    "body": [
+      "I graduated from Hacettepe University with a degree in Computer Engineering in 2005. The first nine years of my career were spent in the Ankara Metropolitan Municipality Fire Department, where I built teams, ran operations and carried decision-making responsibility in emergency scenarios.",
+      "In 2018 I moved to ASKı, the city's water and wastewater utility. As Branch Manager and then Head of Department I worked on operational transformation and the digitalisation of core services. Today I serve as a Senior Specialist at ASKı.",
+      "I have kept building software alongside all of this. İPEK Baca CRM and SimaLogistic SaaS grew out of real problems I met in the field."
+    ],
+    "cta": "Read the resume",
+    "stats": [
+      { "value": 18, "suffix": "+", "label": "Years in Public Sector" },
+      { "value": 9, "suffix": "+", "label": "Years Leading Fire Ops" },
+      { "value": 7, "suffix": "+", "label": "Years in ASKı Leadership" },
+      { "value": 2, "suffix": "", "label": "SaaS Products Live" }
+    ]
+  },
+  "resume": {
+    "eyebrow": "Resume",
+    "title": "A career in chapters",
+    "lead": "From education to firefighting management, and from there to digital products.",
+    "timeline": "Timeline",
+    "skills": "Expertise",
+    "education": "Education",
+    "download": "Download CV",
+    "present": "Present",
+    "software": "Software",
+    "management": "Management",
+    "emergency": "Emergency"
+  },
+  "articles": {
+    "eyebrow": "Articles",
+    "title": "Writing",
+    "lead": "Technology, public administration and lessons from the field.",
+    "filter": "Category",
+    "search": "Search",
+    "searchPlaceholder": "Search titles or content…",
+    "readMore": "Read article",
+    "minutes": "min read",
+    "empty": "Nothing published in this category yet.",
+    "related": "Related articles",
+    "back": "All articles",
+    "published": "Published",
+    "updated": "Updated",
+    "share": "Share",
+    "copyLink": "Copy link",
+    "copied": "Copied"
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Frames",
+    "lead": "Selected moments from firefighting, software and life outside work.",
+    "empty": "No images in this category yet.",
+    "hint": "Use arrow keys to navigate, ESC to close."
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Products and platforms",
+    "lead": "Software work that turns real operational problems into working tools.",
+    "live": "Live demo",
+    "source": "Source code",
+    "stack": "Stack",
+    "status": {
+      "live": "Live",
+      "demo": "Demo",
+      "soon": "Coming soon"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's talk",
+    "lead": "Write about a project, a collaboration or anything on your mind. I usually reply within 48 hours.",
+    "name": "Full name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Your message",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "success": "Your message has been received. I will get back to you shortly.",
+    "error": "The message could not be sent. Please try again.",
+    "linkedin": "LinkedIn",
+    "emailLabel": "Email me",
+    "newMessage": "New message"
+  },
+  "footer": {
+    "tagline": "An engineer where code, fire and city management meet.",
+    "copyright": "All rights reserved.",
+    "backToTop": "Back to top",
+    "language": "Language"
+  },
+  "common": {
+    "all": "All",
+    "loading": "Loading…",
+    "notFound": "Page not found",
+    "notFoundText": "The page you are looking for may have moved, or never existed.",
+    "backHome": "Back to home",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Add",
+    "search": "Search",
+    "required": "This field is required",
+    "optional": "Optional"
+  },
+  "categories": {
+    "TECH": "Technology & Software",
+    "PUBLIC_ADMIN": "Public Administration",
+    "FIRE": "Firefighting & Emergency",
+    "PERSONAL": "Personal Growth"
+  },
+  "galleryCategories": {
+    "FIRE": "Firefighting",
+    "SOFTWARE": "Software",
+    "PERSONAL": "Personal"
+  },
+  "admin": {
+    "login": {
+      "title": "Admin panel",
+      "description": "Sign in to edit the content of this site.",
+      "password": "Password",
+      "submit": "Sign in",
+      "error": "Incorrect password.",
+      "hint": "Default password for local development: admin"
+    },
+    "logout": "Sign out",
+    "dashboard": "Dashboard",
+    "total": "Total",
+    "articles": "Articles",
+    "projects": "Projects",
+    "gallery": "Images",
+    "messages": "Messages",
+    "unread": "Unread",
+    "resume": "Resume",
+    "settings": "Content",
+    "empty": "No records found.",
+    "newItem": "New record",
+    "titleTr": "Title (TR)",
+    "titleEn": "Title (EN)",
+    "descriptionTr": "Description (TR)",
+    "descriptionEn": "Description (EN)",
+    "category": "Category",
+    "order": "Order",
+    "tags": "Tags",
+    "startDate": "Start",
+    "endDate": "End",
+    "current": "Ongoing",
+    "slug": "Slug",
+    "summary": "Summary",
+    "content": "Content (Markdown)",
+    "published": "Published",
+    "coverImage": "Cover image",
+    "imagePath": "Image",
+    "upload": "Upload image",
+    "liveUrl": "Live URL",
+    "githubUrl": "GitHub URL",
+    "techStack": "Tech stack",
+    "featured": "Featured",
+    "view": "View",
+    "message": "Message",
+    "from": "From",
+    "date": "Date",
+    "read": "Read",
+    "markRead": "Mark as read",
+    "confirmDelete": "Delete this record?",
+    "saved": "Saved.",
+    "deleted": "Deleted.",
+    "loginRequired": "You need to sign in to access this page."
+  }
+}

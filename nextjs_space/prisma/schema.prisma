@@ -1,0 +1,120 @@
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ResumeCategory {
+  WORK
+  EDUCATION
+}
+
+enum ArticleCategory {
+  TECH
+  PUBLIC_ADMIN
+  FIRE
+  PERSONAL
+}
+
+enum GalleryCategory {
+  FIRE
+  SOFTWARE
+  PERSONAL
+}
+
+model ResumeEntry {
+  id           String         @id @default(cuid())
+  titleTr      String
+  titleEn      String?
+  orgTr        String
+  orgEn        String?
+  descTr       String?
+  descEn       String?
+  startDate    DateTime
+  endDate      DateTime?
+  isCurrent    Boolean        @default(false)
+  category     ResumeCategory @default(WORK)
+  tags         String[]
+  sortOrder    Int            @default(0)
+  isFireTheme  Boolean        @default(false)
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+
+  @@index([category])
+  @@index([sortOrder])
+}
+
+model Article {
+  id          String          @id @default(cuid())
+  slug        String          @unique
+  titleTr     String
+  titleEn     String?
+  summaryTr   String?
+  summaryEn   String?
+  contentTr   String
+  contentEn   String?
+  locale      String          @default("tr")
+  category    ArticleCategory @default(TECH)
+  tags        String[]
+  coverImage  String?
+  published   Boolean         @default(false)
+  readMinutes Int             @default(5)
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+
+  @@index([slug])
+  @@index([category])
+  @@index([published])
+  @@index([locale])
+}
+
+model GalleryImage {
+  id            String          @id @default(cuid())
+  titleTr       String?
+  titleEn       String?
+  descriptionTr String?
+  descriptionEn String?
+  category      GalleryCategory @default(FIRE)
+  imagePath     String
+  sortOrder     Int             @default(0)
+  createdAt     DateTime        @default(now())
+
+  @@index([category])
+  @@index([sortOrder])
+}
+
+model Project {
+  id             String   @id @default(cuid())
+  titleTr        String
+  titleEn        String?
+  descriptionTr  String
+  descriptionEn  String?
+  liveUrl        String?
+  githubUrl      String?
+  screenshotPath String?
+  techStack      String[]
+  sortOrder      Int      @default(0)
+  featured       Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([featured])
+  @@index([sortOrder])
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([isRead])
+  @@index([createdAt])
+}

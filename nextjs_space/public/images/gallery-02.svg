@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>
+  <rect width="1200" height="900" fill="#050506"/>
+  <defs><radialGradient id="glo" cx="50%" cy="100%" r="70%">
+      <stop offset="0%" stop-color="#1E90FF" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#1E90FF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#1E90FF" stop-opacity="0"/>
+    </radialGradient></defs>
+  <line x1="600" y1="495.00000000000006" x2="0" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="85.71428571428571" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="171.42857142857142" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="257.1428571428571" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="342.85714285714283" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="428.57142857142856" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="514.2857142857142" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="600" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="685.7142857142857" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="771.4285714285713" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="857.1428571428571" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="942.8571428571428" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="1028.5714285714284" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="1114.2857142857142" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="600" y1="495.00000000000006" x2="1200" y2="900" stroke="rgba(255,255,255,0.12)"/>
+  <line x1="0" y1="499.1" x2="1200" y2="499.1" stroke="rgba(255,255,255,0.052)"/>
+  <line x1="0" y1="511.2" x2="1200" y2="511.2" stroke="rgba(255,255,255,0.064)"/>
+  <line x1="0" y1="531.5" x2="1200" y2="531.5" stroke="rgba(255,255,255,0.076)"/>
+  <line x1="0" y1="559.8" x2="1200" y2="559.8" stroke="rgba(255,255,255,0.088)"/>
+  <line x1="0" y1="596.3" x2="1200" y2="596.3" stroke="rgba(255,255,255,0.100)"/>
+  <line x1="0" y1="640.8" x2="1200" y2="640.8" stroke="rgba(255,255,255,0.112)"/>
+  <line x1="0" y1="693.5" x2="1200" y2="693.5" stroke="rgba(255,255,255,0.124)"/>
+  <line x1="0" y1="754.2" x2="1200" y2="754.2" stroke="rgba(255,255,255,0.136)"/>
+  <line x1="0" y1="823.0" x2="1200" y2="823.0" stroke="rgba(255,255,255,0.148)"/>
+  <line x1="0" y1="900.0" x2="1200" y2="900.0" stroke="rgba(255,255,255,0.160)"/>
+  <rect width="1200" height="900" fill="url(#glo)" opacity="0.75"/>
+  <rect y="494.00000000000006" width="1200" height="2" fill="#1E90FF" opacity="0.35"/>
+  <rect width="1200" height="900" filter="url(#grain)" opacity="0.14"/>
+  <rect x="0.5" y="0.5" width="1199" height="899" stroke="rgba(255,255,255,0.08)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" fill="rgba(255,255,255,0.45)">
+    <text x="34" y="848" font-size="13" letter-spacing="3">DISPATCH / CONTROL</text>
+    <text x="34" y="868" font-size="11" letter-spacing="2" fill="rgba(255,255,255,0.25)">INCIDENT MANAGEMENT</text>
+  </g>
+</svg>

@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Lusion referans paleti — koyu öncelikli */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 228 24% 20%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 228 24% 17%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 16 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 228 24% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 228 18% 16%;
+    --muted-foreground: 0 0% 53%;
+
+    --accent: 16 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 228 14% 22%;
+    --input: 228 14% 22%;
+    --ring: 16 100% 50%;
+
+    --radius: 0.625rem;
+    --radius-sm: calc(0.625rem - 4px);
+    --radius-lg: calc(0.625rem + 4px);
+    --radius-full: 9999px;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
+
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
+    --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.55);
+    --shadow-lg: 0 18px 40px -12px rgb(0 0 0 / 0.7);
+
+    --duration-fast: 150ms;
+    --duration-normal: 250ms;
+    --duration-slow: 350ms;
+
+    /* İtfaiye temalı özel token'lar */
+    --fire: 16 100% 50%;
+    --ember: 16 100% 60%;
+    --tech: 210 100% 50%;
+    --surface-dark: 228 24% 20%;
+    --surface-light: 226 40% 91%;
+    --ink: 228 24% 8%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 228 24% 20%;
+    --card-foreground: 0 0% 100%;
+    --popover: 228 24% 17%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 16 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 228 24% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 228 18% 16%;
+    --muted-foreground: 0 0% 53%;
+    --accent: 16 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 228 14% 22%;
+    --input: 228 14% 22%;
+    --ring: 16 100% 50%;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #000;
+  }
+
+  /* Lenis aktifken native smooth scroll kapatılır (çift yumuşatmayı önler) */
+  html.lenis,
+  html.lenis body {
+    scroll-behavior: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: hsl(var(--primary) / 0.28);
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background-color: transparent; }
+  ::-webkit-scrollbar-thumb { background-color: hsl(var(--border)); border-radius: 9999px; }
+  ::-webkit-scrollbar-thumb:hover { background-color: hsl(var(--primary) / 0.6); }
+}
+
+@layer components {
+  /* Kapsül buton — Lusion referansı (87.5px) */
+  .pill {
+    border-radius: 87.5px;
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .fire-text {
+    background: linear-gradient(135deg, #ff4500, #ff6b35);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .fire-glow {
+    box-shadow: 0 0 0 1px hsl(var(--fire) / 0.4), 0 10px 40px -10px hsl(var(--fire) / 0.55);
+  }
+
+  .glass {
+    background: linear-gradient(180deg, hsl(var(--surface-dark) / 0.55), hsl(var(--surface-dark) / 0.25));
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.16;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+}
+
+@layer utilities {
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+  .scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Özel imleç yalnızca fareli ve hareket azaltması kapalı cihazlarda görünür */
+  .cursor-layer { display: none; }
+  @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    .cursor-layer { display: block; }
+  }
+
+  .text-balance { text-wrap: balance; }
+
+  .hero-gradient {
+    background:
+      radial-gradient(ellipse 70% 55% at 50% 108%, hsl(var(--fire) / 0.28), transparent 70%),
+      radial-gradient(ellipse 45% 45% at 12% 8%, hsl(var(--tech) / 0.1), transparent 70%),
+      radial-gradient(ellipse 45% 45% at 88% 4%, hsl(var(--fire) / 0.12), transparent 70%);
+  }
+
+  .section-gradient {
+    background:
+      radial-gradient(ellipse 60% 50% at 50% 0%, hsl(var(--fire) / 0.08), transparent 70%),
+      #000;
+  }
+
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+  }
+}

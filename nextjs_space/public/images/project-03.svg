@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" fill="none">
+  <defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>
+  <rect width="1200" height="750" fill="#050506"/>
+  <defs><radialGradient id="glo" cx="50%" cy="100%" r="70%">
+      <stop offset="0%" stop-color="#FF4500" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#FF4500" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#FF4500" stop-opacity="0"/>
+    </radialGradient></defs>
+  <path d="M120 0 L744 0 L288 750 L24 750 Z" fill="url(#glo)" opacity="0.55"/>
+  <path d="M360 0 L408.00000000000006 0 L120 750 L72 750 Z" fill="#FF4500" opacity="0.25"/>
+  <circle cx="864" cy="255.00000000000003" r="120" fill="url(#glo)"/>
+  <rect width="1200" height="750" filter="url(#grain)" opacity="0.14"/>
+  <rect x="0.5" y="0.5" width="1199" height="749" stroke="rgba(255,255,255,0.08)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" fill="rgba(255,255,255,0.45)">
+    <text x="34" y="698" font-size="13" letter-spacing="3">FIELD OPS MODULE</text>
+    <text x="34" y="718" font-size="11" letter-spacing="2" fill="rgba(255,255,255,0.25)">PILOT</text>
+  </g>
+</svg>

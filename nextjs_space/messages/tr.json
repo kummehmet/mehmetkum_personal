@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "siteName": "Mehmet Kum",
+    "title": "Mehmet Kum — Bilgisayar Mühendisi, Kamu Yöneticisi",
+    "description": "Bilgisayar mühendisliği, kamu yönetimi ve itfaiyecilik deneyimini bir araya getiren kişisel portföy sitesi.",
+    "home": {
+      "title": "Mehmet Kum — Bilgisayar Mühendisi, Kamu Yöneticisi",
+      "description": "18 yıllık kamu ve itfaiyecilik deneyimiyle, geliştirdiği SaaS ürünlerini bir araya getiren kişisel portföy."
+    },
+    "resume": {
+      "title": "Özgeçmiş — Mehmet Kum",
+      "description": "Eğitim, itfaiyecilik ve ASKı'daki yönetim görevlerinin kronolojisi."
+    },
+    "articles": {
+      "title": "Makaleler — Mehmet Kum",
+      "description": "Teknoloji, kamu yönetimi ve itfaiyecilik üzerine yazılar."
+    },
+    "gallery": {
+      "title": "Galeri — Mehmet Kum",
+      "description": "İtfaiyecilik, yazılım projeleri ve kişisel anlardan kareler."
+    },
+    "projects": {
+      "title": "Projeler — Mehmet Kum",
+      "description": "İPEK Baca CRM ve SimaLogistic SaaS başta olmak üzere yazılım projeleri."
+    },
+    "contact": {
+      "title": "İletişim — Mehmet Kum",
+      "description": "Proje, iş birliği veya aklınıza takılan herhangi bir konu için iletişime geçin."
+    },
+    "admin": {
+      "title": "Yönetim Paneli — Mehmet Kum",
+      "description": "Site içeriğini yönetin."
+    }
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "resume": "Özgeçmiş",
+    "articles": "Makaleler",
+    "gallery": "Galeri",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "menu": "Menü",
+    "close": "Kapat",
+    "talk": "Konuşalım"
+  },
+  "hero": {
+    "eyebrow": "Portföy — 2026",
+    "title": "MEHMET KUM",
+    "subtitle": "Bilgisayar Mühendisi · Kamu Yöneticisi · İtfaiye Müdürü",
+    "scroll": "Kaydır",
+    "keywords": [
+      "YAZILIM",
+      "İTFAİYE",
+      "KAMU YÖNETİMİ",
+      "ACİL DURUM",
+      "SAAS",
+      "TÜRKİYE"
+    ]
+  },
+  "about": {
+    "eyebrow": "Hakkımda",
+    "title": "Kod yazan, yangınla savaşan, şehri yöneten bir mühendis.",
+    "body": [
+      "1999'da Hacettepe Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum. Kariyerimin ilk dokuz yılı Ankara Büyükşehir Belediyesi İtfaiyesi'nde geçti; sıradan bir itfaiyeciliğin ötesinde, ekipleri kurdum, operasyonları yönettim, acil durum anlarında karar verme sorumluluğunu taşıdım.",
+      "2018'de ASKı Genel Müdürlüğü'ne geçtim. Şube Müdürü ve Daire Başkanı olarak su ve atıksu altyapısının yönetiminde, kurumun operasyonel dönüşümünde ve dijitalleşme süreçlerinde görev aldım. Bugün ASKı'da Kıdemli Uzman olarak çalışıyorum.",
+      "Bu yıllar boyunca yazılımı da sürdürdüm. İPEK Baca CRM ve SimaLogistic SaaS projeleri, sahadan gelen ihtiyaçları doğrudan ürüne dönüştürme çabasıyla geliştirildi."
+    ],
+    "cta": "Özgeçmişi incele",
+    "stats": [
+      { "value": 18, "suffix": "+", "label": "Yıl Kamu Sektörü" },
+      { "value": 9, "suffix": "+", "label": "Yıl İtfaiye Yönetimi" },
+      { "value": 7, "suffix": "+", "label": "Yıl ASKı Yönetimi" },
+      { "value": 2, "suffix": "", "label": "Yayında SaaS Ürün" }
+    ]
+  },
+  "resume": {
+    "eyebrow": "Özgeçmiş",
+    "title": "Kariyer yolculuğu",
+    "lead": "Eğitimden itfaiye yönetimine, oradan dijital ürünlere uzanan bir çizgi.",
+    "timeline": "Zaman Çizelgesi",
+    "skills": "Yetkinlikler",
+    "education": "Eğitim",
+    "download": "CV İndir",
+    "present": "Devam ediyor",
+    "software": "Yazılım",
+    "management": "Yönetim",
+    "emergency": "Acil Durum"
+  },
+  "articles": {
+    "eyebrow": "Makaleler",
+    "title": "Yazılar",
+    "lead": "Teknoloji, kamu yönetimi ve sahadan çıkarımlar.",
+    "filter": "Kategori",
+    "search": "Ara",
+    "searchPlaceholder": "Başlık veya içerikte ara…",
+    "readMore": "Yazıyı oku",
+    "minutes": "dk okuma",
+    "empty": "Bu kategoride henüz yazı yok.",
+    "related": "İlgili yazılar",
+    "back": "Tüm yazılar",
+    "published": "Yayımlandı",
+    "updated": "Güncellendi",
+    "share": "Paylaş",
+    "copyLink": "Bağlantıyı kopyala",
+    "copied": "Kopyalandı"
+  },
+  "gallery": {
+    "eyebrow": "Galeri",
+    "title": "Kareler",
+    "lead": "İtfaiyecilik, yazılım ve kişisel hayattan seçilmiş anlar.",
+    "empty": "Bu kategoride henüz görsel yok.",
+    "hint": "Ok tuşlarıyla gezinin, ESC ile kapatın."
+  },
+  "projects": {
+    "eyebrow": "Projeler",
+    "title": "Ürünler ve platformlar",
+    "lead": "Sahadaki gerçek problemleri yazılımla çözen çalışmalar.",
+    "live": "Canlı Demo",
+    "source": "Kaynak Kod",
+    "stack": "Teknoloji",
+    "status": {
+      "live": "Canlı",
+      "demo": "Demo",
+      "soon": "Yakında"
+    }
+  },
+  "contact": {
+    "eyebrow": "İletişim",
+    "title": "Konuşalım",
+    "lead": "Proje, iş birliği veya aklınıza takılan herhangi bir konu için yazın. Genellikle 48 saat içinde dönüş yapıyorum.",
+    "name": "Ad Soyad",
+    "email": "E-posta",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "submit": "Gönder",
+    "sending": "Gönderiliyor…",
+    "success": "Mesajınız alındı. En kısa sürede size dönüş yapacağım.",
+    "error": "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
+    "linkedin": "LinkedIn",
+    "emailLabel": "E-posta ile yazın",
+    "newMessage": "Yeni mesaj"
+  },
+  "footer": {
+    "tagline": "Kod, yangın ve şehir yönetimi kesişiminde bir mühendis.",
+    "copyright": "Tüm hakları saklıdır.",
+    "backToTop": "Başa dön",
+    "language": "Dil"
+  },
+  "common": {
+    "all": "Tümü",
+    "loading": "Yükleniyor…",
+    "notFound": "Sayfa bulunamadı",
+    "notFoundText": "Aradığınız sayfa taşınmış ya da hiç var olmamış olabilir.",
+    "backHome": "Ana sayfaya dön",
+    "close": "Kapat",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "save": "Kaydet",
+    "cancel": "Vazgeç",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "create": "Ekle",
+    "search": "Ara",
+    "required": "Bu alan zorunlu",
+    "optional": "İsteğe bağlı"
+  },
+  "categories": {
+    "TECH": "Teknoloji & Yazılım",
+    "PUBLIC_ADMIN": "Kamu Yönetimi",
+    "FIRE": "İtfaiyecilik & Acil Durum",
+    "PERSONAL": "Kişisel Gelişim"
+  },
+  "galleryCategories": {
+    "FIRE": "İtfaiye",
+    "SOFTWARE": "Yazılım",
+    "PERSONAL": "Kişisel"
+  },
+  "admin": {
+    "login": {
+      "title": "Yönetim Paneli",
+      "description": "Site içeriğini düzenlemek için giriş yapın.",
+      "password": "Parola",
+      "submit": "Giriş yap",
+      "error": "Parola hatalı.",
+      "hint": "Yerel geliştirmede varsayılan parola: admin"
+    },
+    "logout": "Çıkış",
+    "dashboard": "Kontrol Paneli",
+    "total": "Toplam",
+    "articles": "Makale",
+    "projects": "Proje",
+    "gallery": "Görsel",
+    "messages": "Mesaj",
+    "unread": "Okunmamış",
+    "resume": "Özgeçmiş",
+    "settings": "İçerik Yönetimi",
+    "empty": "Kayıt bulunamadı.",
+    "newItem": "Yeni kayıt",
+    "titleTr": "Başlık (TR)",
+    "titleEn": "Başlık (EN)",
+    "descriptionTr": "Açıklama (TR)",
+    "descriptionEn": "Açıklama (EN)",
+    "category": "Kategori",
+    "order": "Sıra",
+    "tags": "Etiketler",
+    "startDate": "Başlangıç",
+    "endDate": "Bitiş",
+    "current": "Devam ediyor",
+    "slug": "Slug",
+    "summary": "Özet",
+    "content": "İçerik (Markdown)",
+    "published": "Yayında",
+    "coverImage": "Kapak görseli",
+    "imagePath": "Görsel",
+    "upload": "Görsel yükle",
+    "liveUrl": "Canlı adres",
+    "githubUrl": "GitHub adresi",
+    "techStack": "Teknoloji listesi",
+    "featured": "Öne çıkan",
+    "view": "Görüntüle",
+    "message": "Mesaj",
+    "from": "Gönderen",
+    "date": "Tarih",
+    "read": "Okundu",
+    "markRead": "Okundu işaretle",
+    "confirmDelete": "Bu kayıt silinsin mi?",
+    "saved": "Kaydedildi.",
+    "deleted": "Silindi.",
+    "loginRequired": "Bu sayfaya erişmek için giriş yapmalısınız."
+  }
+}
