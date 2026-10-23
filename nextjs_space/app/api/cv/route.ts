@@ -30,8 +30,8 @@ export async function GET(request: NextRequest) {
   lines.push({
     text:
       locale === 'en'
-        ? 'Computer Engineer - Public Administrator - Fire Chief'
-        : 'Bilgisayar Mühendisi - Kamu Yöneticisi - İtfaiye Müdürü',
+        ? 'Computer Engineer - Public Administrator - Firefighter'
+        : 'Bilgisayar Mühendisi - Kamu Yöneticisi - İtfaiyeci',
     size: 11,
     gap: 20,
     color: [0.85, 0.25, 0.05],

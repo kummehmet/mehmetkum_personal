@@ -29,7 +29,7 @@ export default async function OpengraphImage() {
             MEHMET KUM
           </div>
           <div style={{ marginTop: 24, fontSize: 30, color: 'rgba(255,255,255,0.55)' }}>
-            Bilgisayar Mühendisi · Kamu Yöneticisi · İtfaiye Müdürü
+            Bilgisayar Mühendisi · Kamu Yöneticisi · İtfaiyeci
           </div>
         </div>
 
