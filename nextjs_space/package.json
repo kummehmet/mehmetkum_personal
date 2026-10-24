@@ -136,5 +136,14 @@
   "resolutions": {
     "motion-dom": "12.23.12",
     "motion-utils": "12.23.6"
+  },
+  "allowScripts": {
+    "@prisma/client@6.7.0": true,
+    "@prisma/engines@6.7.0": true,
+    "es5-ext@0.10.64": true,
+    "esbuild@0.28.2": true,
+    "esbuild@0.25.12": true,
+    "prisma@6.7.0": true,
+    "unrs-resolver@1.12.2": true
   }
 }

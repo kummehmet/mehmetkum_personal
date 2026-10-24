@@ -38,3 +38,4 @@ desktop.ini
 # Platform markers
 .abacus.donotdelete
 nextjs_space/tsconfig.tsbuildinfo
+.vercel
