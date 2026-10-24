@@ -21,6 +21,19 @@ function categoryFor(project: Project, locale: Locale) {
   return locale === 'tr' ? 'Kamu • Yazılım' : 'Public • Software';
 }
 
+const stack = [
+  'Next.js',
+  'TypeScript',
+  'PostgreSQL',
+  'Prisma',
+  'Tailwind CSS',
+  'Oracle DB',
+  'PL/SQL',
+  'Oracle Forms & Reports',
+  'C#',
+  'Java',
+];
+
 export function WorkIndex({
   locale,
   t,
@@ -30,8 +43,6 @@ export function WorkIndex({
   t: Messages;
   projects: Project[];
 }) {
-  const tags = Array.from(new Set(projects.flatMap((project) => project.techStack))).slice(0, 6);
-
   return (
     <section
       id="isler"
@@ -60,7 +71,7 @@ export function WorkIndex({
         </div>
 
         <p className="mt-4 flex flex-wrap gap-x-4 gap-y-1 font-mono text-[9px] uppercase tracking-[0.2em] text-white/25">
-          {tags.map((tag) => (
+          {stack.map((tag) => (
             <span key={tag}>{tag}</span>
           ))}
         </p>

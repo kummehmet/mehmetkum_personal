@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono, Space_Grotesk } from 'next/font/google';
+import { Inter, JetBrains_Mono, Manrope, Space_Grotesk } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import '../globals.css';
 import { getMessages, isLocale, locales } from '@/lib/i18n';
@@ -9,6 +9,7 @@ import { ChunkLoadErrorHandler } from '@/components/chunk-load-error-handler';
 
 const inter = Inter({ subsets: ['latin', 'latin-ext'], variable: '--font-sans' });
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin', 'latin-ext'], variable: '--font-display' });
+const manrope = Manrope({ subsets: ['latin', 'latin-ext'], variable: '--font-soft' });
 const mono = JetBrains_Mono({ subsets: ['latin', 'latin-ext'], variable: '--font-mono' });
 
 export const viewport = {
@@ -97,7 +98,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="dark" suppressHydrationWarning>
-      <body className={`${inter.variable} ${spaceGrotesk.variable} ${mono.variable} bg-background font-sans text-foreground antialiased`}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} ${manrope.variable} ${mono.variable} bg-background font-sans text-foreground antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           {children}
           <Toaster />

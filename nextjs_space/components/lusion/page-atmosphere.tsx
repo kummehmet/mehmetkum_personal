@@ -63,7 +63,7 @@ export function PageAtmosphere() {
       y: y + rand(-8, 8),
       vx: rand(-2.6, 2.6),
       vy: rand(-6.4, -1.2),
-      r: rand(1.9, 5.4),
+      r: rand(2.85, 8.1),
       alpha: rand(0.5, 0.9),
       wobble: Math.random() * Math.PI * 2,
       wobbleSpeed: rand(0.03, 0.075),

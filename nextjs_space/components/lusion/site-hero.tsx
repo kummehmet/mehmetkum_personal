@@ -38,7 +38,7 @@ export function SiteHero({ locale, t }: { locale: Locale; t: Messages }) {
         </motion.div>
 
         <div className="relative mt-10 md:mt-14">
-          <h1 className="font-display font-medium uppercase leading-[0.8] tracking-[-0.055em] text-[clamp(3.6rem,16vw,16rem)]">
+          <h1 className="font-soft font-semibold uppercase leading-[0.85] tracking-[-0.03em] text-[clamp(2.4rem,9vw,9rem)]">
             <span className="block overflow-hidden">
               <motion.span
                 initial={reduce ? false : { y: '110%' }}
@@ -125,7 +125,7 @@ export function SiteHero({ locale, t }: { locale: Locale; t: Messages }) {
             <span className="h-1 w-1 rounded-full bg-[#0ea5b7]" /> water
           </span>
           <span className="flex items-center gap-1.5">
-            <span className="h-1 w-1 rounded-full bg-[#0f766e]" /> signal
+            <span className="h-1 w-1 rounded-full bg-[#0f766e]" /> data
           </span>
         </span>
         <span className="flex items-center gap-2">

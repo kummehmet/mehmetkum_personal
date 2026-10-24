@@ -541,8 +541,8 @@ Bu siteyi kurmamın sebebi de bu: iki hayatı tek bir yerde tutmak.`,
     },
     {
       id: 'docx-aski-card-meter',
-      titleTr: 'ASKİ Kartlı Sayaç Su Satış Sistemi',
-      titleEn: 'Card Meter Water Sales System',
+      titleTr: 'Kartlı Su Satış Programı',
+      titleEn: 'Card Meter Water Sales Programme',
       descriptionTr:
         'Ön ödemeli kartlı sayaçlar için yükleme, satış ve mutabakat süreçlerini yöneten sistem; kiosk ve abone kayıtlarıyla entegre çalışır.',
       descriptionEn:
@@ -557,8 +557,8 @@ Bu siteyi kurmamın sebebi de bu: iki hayatı tek bir yerde tutmak.`,
     },
     {
       id: 'docx-aski-meter-field',
-      titleTr: 'Sayaç Sökme-Takma ve Bakım Saha Hizmet Sistemi',
-      titleEn: 'Meter Field Service System',
+      titleTr: 'Sayaç Operasyonları Saha Yazılımı',
+      titleEn: 'Meter Operations Field Software',
       descriptionTr:
         'Sayaç sökme, takma ve bakım işlerinin iş emri olarak açıldığı; ekip atama, saha durumu ve kapanış kontrollerini kapsayan saha hizmet akışı.',
       descriptionEn:

@@ -62,7 +62,7 @@
     "hero": {
       "availability": "Open to new projects",
       "since": "Since 2005",
-      "blurb": "I turn problems that start in the field into software, and software into the daily rhythm of institutions. Fire, water and signal — three faces of the same engineering discipline.",
+      "blurb": "I turn problems that start in the field into software, and software into the daily rhythm of institutions. Fire, water and data — the same engineering discipline in all three.",
       "cta": "See the work"
     },
     "work": {
@@ -91,7 +91,7 @@
   },
   "about": {
     "eyebrow": "About",
-    "title": "An engineer who writes code, fights fires and runs a city.",
+    "title": "An engineer who writes code, fights fires and takes part in running a city.",
     "body": [
       "I graduated from Hacettepe University with a degree in Computer Engineering in 2005. I joined the Ankara Metropolitan Municipality Fire Department in 2008; over nearly a decade of firefighting I built teams, ran operations and carried decision-making responsibility in emergency scenarios.",
       "In 2018 I moved to ASKı, the city's water and wastewater utility. As Branch Manager and then Head of Department I worked on operational transformation and the digitalisation of core services. Today I serve as a Senior Specialist at ASKı.",

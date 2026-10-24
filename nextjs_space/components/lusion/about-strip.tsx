@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { ArrowUpRight, Cpu, Droplets, Flame } from 'lucide-react';
+import { ArrowUpRight, Database, Droplets, Flame } from 'lucide-react';
 import type { Locale, Messages } from '@/lib/i18n';
 import { StatCounter } from '@/components/shared/stat-counter';
 
 const badges = [
   { icon: Flame, label: 'Fire', color: '#ff5a1f' },
   { icon: Droplets, label: 'Water', color: '#0ea5b7' },
-  { icon: Cpu, label: 'Signal', color: '#0f766e' },
+  { icon: Database, label: 'Data', color: '#0f766e' },
 ];
 
 export function AboutStrip({ locale, t }: { locale: Locale; t: Messages }) {
