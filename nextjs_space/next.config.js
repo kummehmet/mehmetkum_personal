@@ -6,6 +6,9 @@ const nextConfig = {
   output: process.env.NEXT_OUTPUT_MODE,
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
+  outputFileTracingIncludes: {
+    '/**': ['./data/local-content.json'],
+  },
   outputFileTracingRoot: process.env.NEXT_OUTPUT_MODE ? path.join(__dirname, '../') : __dirname,
   typescript: {
     ignoreBuildErrors: true,

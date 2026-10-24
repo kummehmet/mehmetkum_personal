@@ -58,6 +58,37 @@
       "TÜRKİYE"
     ]
   },
+  "home": {
+    "hero": {
+      "availability": "Yeni projelere açık",
+      "since": "2005'ten beri",
+      "blurb": "Sahada başlayan problemleri yazılıma, yazılımı kurumların gündelik işleyişine dönüştürüyorum. Ateş, su ve sinyal — üçü de aynı mühendislik disiplini.",
+      "cta": "İşlere bak"
+    },
+    "work": {
+      "eyebrow": "Seçilmiş",
+      "title": "Projeler",
+      "count": "Toplam",
+      "all": "Tümü",
+      "diagram": "Şema / arşiv"
+    },
+    "story": {
+      "eyebrow": "Kariyer",
+      "period": "Dönem",
+      "role": "Görev",
+      "org": "Kurum"
+    },
+    "together": {
+      "eyebrow": "İş birliği",
+      "title": "Birlikte çalışalım",
+      "body": "Bir fikir, bir ürün ya da sadece merhaba. Yaz, konuşalım.",
+      "button": "İletişime geç",
+      "hint": "Boşluğa tıkla, su damlaları düşsün",
+      "water": "Su",
+      "fire": "Ateş",
+      "clickHint": "tıkla"
+    }
+  },
   "about": {
     "eyebrow": "Hakkımda",
     "title": "Kod yazan, yangınla savaşan, şehri yöneten bir mühendis.",

@@ -58,6 +58,37 @@
       "TÜRKİYE"
     ]
   },
+  "home": {
+    "hero": {
+      "availability": "Open to new projects",
+      "since": "Since 2005",
+      "blurb": "I turn problems that start in the field into software, and software into the daily rhythm of institutions. Fire, water and signal — three faces of the same engineering discipline.",
+      "cta": "See the work"
+    },
+    "work": {
+      "eyebrow": "Selected",
+      "title": "Projects",
+      "count": "Total",
+      "all": "All",
+      "diagram": "Diagram / archive"
+    },
+    "story": {
+      "eyebrow": "Career",
+      "period": "Period",
+      "role": "Role",
+      "org": "Organisation"
+    },
+    "together": {
+      "eyebrow": "Collaboration",
+      "title": "Let's work together",
+      "body": "An idea, a product, or just a hello. Write to me.",
+      "button": "Get in touch",
+      "hint": "Click the space, let the drops fall",
+      "water": "Water",
+      "fire": "Fire",
+      "clickHint": "click"
+    }
+  },
   "about": {
     "eyebrow": "About",
     "title": "An engineer who writes code, fights fires and runs a city.",

@@ -58,6 +58,8 @@ const config: Config = {
         fire: 'hsl(var(--fire))',
         ember: 'hsl(var(--ember))',
         tech: 'hsl(var(--tech))',
+        water: 'hsl(var(--water))',
+        electric: 'hsl(var(--electric))',
         surface: 'hsl(var(--surface-dark))',
         paper: 'hsl(var(--surface-light))',
         ink: 'hsl(var(--ink))',

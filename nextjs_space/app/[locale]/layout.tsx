@@ -7,9 +7,9 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/sonner';
 import { ChunkLoadErrorHandler } from '@/components/chunk-load-error-handler';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-display' });
-const mono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
+const inter = Inter({ subsets: ['latin', 'latin-ext'], variable: '--font-sans' });
+const spaceGrotesk = Space_Grotesk({ subsets: ['latin', 'latin-ext'], variable: '--font-display' });
+const mono = JetBrains_Mono({ subsets: ['latin', 'latin-ext'], variable: '--font-mono' });
 
 export const viewport = {
   themeColor: '#000000',
