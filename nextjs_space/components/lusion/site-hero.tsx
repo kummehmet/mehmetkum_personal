@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import type { Locale, Messages } from '@/lib/i18n';
+import { AshMark } from '@/components/lusion/ash-mark';
 
 const roles = ['Bilgisayar Mühendisi', 'Kamu Yöneticisi', 'İtfaiyeci'];
 
@@ -37,33 +38,21 @@ export function SiteHero({ locale, t }: { locale: Locale; t: Messages }) {
           </span>
         </motion.div>
 
-        <div className="relative mt-10 md:mt-14">
-          <h1 className="font-soft font-semibold uppercase leading-[0.85] tracking-[-0.03em] text-[clamp(2.4rem,9vw,9rem)]">
-            <span className="block overflow-hidden">
-              <motion.span
-                initial={reduce ? false : { y: '110%' }}
-                animate={{ y: 0 }}
-                transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-                className="block"
-              >
-                Mehmet
-              </motion.span>
+        <div className="relative mt-8 md:mt-10">
+          <h1 className="sr-only">Mehmet Kum</h1>
+          <motion.div
+            initial={reduce ? false : { opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.1 }}
+          >
+            <AshMark text="MK" className="h-[clamp(7rem,26vw,19rem)]" />
+          </motion.div>
+          <div className="mt-3 flex justify-end">
+            <span className="hidden items-center gap-3 font-mono text-[10px] uppercase tracking-[0.22em] text-white/35 md:flex">
+              <span className="h-px w-16 bg-white/20" />
+              {t.home.hero.since}
             </span>
-            <span className="block overflow-hidden">
-              <motion.span
-                initial={reduce ? false : { y: '110%' }}
-                animate={{ y: 0 }}
-                transition={{ duration: 0.9, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
-                className="block"
-              >
-                Kum
-              </motion.span>
-            </span>
-          </h1>
-          <span className="absolute bottom-3 right-0 hidden items-center gap-3 font-mono text-[10px] uppercase tracking-[0.22em] text-white/35 md:flex">
-            <span className="h-px w-16 bg-white/20" />
-            {t.home.hero.since}
-          </span>
+          </div>
         </div>
       </div>
 

@@ -5,7 +5,7 @@
     "description": "Bilgisayar mühendisliği, kamu yönetimi ve itfaiyecilik deneyimini bir araya getiren kişisel portföy sitesi.",
     "home": {
       "title": "Mehmet Kum — Bilgisayar Mühendisi, Kamu Yöneticisi",
-      "description": "18 yıllık kamu ve itfaiyecilik deneyimiyle, geliştirdiği SaaS ürünlerini bir araya getiren kişisel portföy."
+      "description": "18 yıllık kamu ve itfaiyecilik deneyimini, sahadan doğan SaaS ürünleriyle bir araya getiren kişisel portföy."
     },
     "resume": {
       "title": "Özgeçmiş — Mehmet Kum",
@@ -62,7 +62,7 @@
     "hero": {
       "availability": "Yeni projelere açık",
       "since": "2005'ten beri",
-      "blurb": "Sahada başlayan problemleri yazılıma, yazılımı kurumların gündelik işleyişine dönüştürüyorum. Ateş, su ve veri — üçünde de aynı mühendislik disiplini.",
+      "blurb": "Sahada başlayan problemleri yazılıma, yazılımı kurumların gündelik işleyişine dönüştürmek gerekiyor. Ateş, su ve veri — üçünde de aynı mühendislik disiplini.",
       "cta": "İşlere bak"
     },
     "work": {
@@ -91,11 +91,11 @@
   },
   "about": {
     "eyebrow": "Hakkımda",
-    "title": "Kod yazan, yangınla savaşan, şehri yönetiminde yer alan bir mühendis.",
+    "title": "Kodun, yangının ve şehir yönetiminin kesişiminde bir mühendislik pratiği.",
     "body": [
-      "2005'te Hacettepe Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum. 2008'de Ankara Büyükşehir Belediyesi İtfaiyesi'ne katıldım; yaklaşık on yıl süren itfaiyecilik döneminde ekipleri kurdum, operasyonları yönettim, acil durum anlarında karar verme sorumluluğunu taşıdım.",
-      "2018'de ASKı Genel Müdürlüğü'ne geçtim. Şube Müdürü ve Daire Başkanı olarak su ve atıksu altyapısının yönetiminde, kurumun operasyonel dönüşümünde ve dijitalleşme süreçlerinde görev aldım. Bugün ASKı'da Kıdemli Uzman olarak çalışıyorum.",
-      "Bu yıllar boyunca yazılımı da sürdürdüm. İPEK Baca CRM ve SimaLogistic SaaS projeleri, sahadan gelen ihtiyaçları doğrudan ürüne dönüştürme çabasıyla geliştirildi."
+      "2005'te Hacettepe Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum; 2008'de Ankara Büyükşehir Belediyesi İtfaiyesi'ne katıldım. Yaklaşık on yıl süren itfaiyecilik dönemi, ekiplerin kurulması, operasyonların yürütülmesi ve acil durumlarda karar sorumluluğuyla geçti.",
+      "2018'de ASKı Genel Müdürlüğü'ne geçtim. Şube Müdürlüğü ve Daire Başkanlığı dönemlerinde su ve atıksu altyapısının yönetimi, kurumun operasyonel dönüşümü ve dijitalleşme süreçleri gündemin merkezindeydi. Bugün ASKı'da Kıdemli Uzman olarak çalışıyorum.",
+      "Bu yıllar boyunca yazılım da sürdü. İPEK Baca CRM ve SimaLogistic SaaS, sahadan gelen ihtiyaçların doğrudan ürüne dönüşmesiyle ortaya çıktı."
     ],
     "cta": "Özgeçmişi incele",
     "stats": [
@@ -159,14 +159,14 @@
   "contact": {
     "eyebrow": "İletişim",
     "title": "Konuşalım",
-    "lead": "Proje, iş birliği veya aklınıza takılan herhangi bir konu için yazın. Genellikle 48 saat içinde dönüş yapıyorum.",
+    "lead": "Proje, iş birliği veya aklınıza takılan herhangi bir konu için yazın. Dönüş genellikle 48 saat içinde olur.",
     "name": "Ad Soyad",
     "email": "E-posta",
     "subject": "Konu",
     "message": "Mesajınız",
     "submit": "Gönder",
     "sending": "Gönderiliyor…",
-    "success": "Mesajınız alındı. En kısa sürede size dönüş yapacağım.",
+    "success": "Mesajınız alındı. En kısa sürede dönüş yapılacak.",
     "error": "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
     "linkedin": "LinkedIn",
     "emailLabel": "E-posta ile yazın",

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight, Database, Droplets, Flame } from 'lucide-react';
 import type { Locale, Messages } from '@/lib/i18n';
@@ -18,11 +19,21 @@ export function AboutStrip({ locale, t }: { locale: Locale; t: Messages }) {
       <div className="mx-auto grid max-w-[1600px] gap-10 md:grid-cols-12">
         <div className="md:col-span-4">
           <div className="relative aspect-[4/5] overflow-hidden border border-white/10 bg-[#0c0e12]">
-            <div className="absolute inset-0 bg-[conic-gradient(from_150deg_at_60%_40%,rgba(255,90,31,0.30),rgba(14,165,183,0.24),rgba(15,118,110,0.28),rgba(255,90,31,0.30))] blur-2xl" />
-            <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:46px_46px]" aria-hidden="true" />
-            <span className="absolute inset-0 flex items-center justify-center font-display text-[clamp(4rem,9vw,7rem)] font-medium tracking-[-0.06em] text-white/10">
-              MK
-            </span>
+            <Image
+              src="/images/photos/portre-01.jpg"
+              alt="Mehmet Kum"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 bg-gradient-to-t from-[#08090c] via-[#08090c]/25 to-transparent"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 opacity-30 mix-blend-overlay [background-image:linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:46px_46px]"
+            />
             <div className="absolute inset-x-4 bottom-4 flex flex-wrap gap-1.5">
               {badges.map((badge) => {
                 const Icon = badge.icon;

@@ -2,9 +2,10 @@
 
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { AshMark } from '@/components/lusion/ash-mark';
 
 /**
- * Footer'daki dev tipografi — scroll ile yavaşça ortaya çıkar.
+ * Footer'daki dev tipografi — scroll ile hafifçe belirginleşen, küllü kabartma işaret.
  */
 export function FooterType({ text }: { text: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -12,18 +13,14 @@ export function FooterType({ text }: { text: string }) {
     target: ref,
     offset: ['start end', 'end start'],
   });
-  const opacity = useTransform(scrollYProgress, [0, 0.6], [0.15, 1]);
-  const y = useTransform(scrollYProgress, [0, 1], [40, -40]);
+  const opacity = useTransform(scrollYProgress, [0, 0.7], [0.45, 1]);
+  const y = useTransform(scrollYProgress, [0, 1], [12, -12]);
 
   return (
-    <div ref={ref} className="relative overflow-hidden">
-      <motion.p
-        style={{ opacity, y }}
-        aria-hidden="true"
-        className="select-none whitespace-nowrap text-center font-display text-[18vw] font-bold leading-[0.85] tracking-[-0.04em] text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.22)]"
-      >
-        {text}
-      </motion.p>
+    <div ref={ref} className="relative">
+      <motion.div style={{ opacity, y }} aria-hidden="true">
+        <AshMark text={text} variant="dark" className="h-[clamp(2.2rem,6.4vw,7rem)]" />
+      </motion.div>
     </div>
   );
 }

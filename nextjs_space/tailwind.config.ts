@@ -13,6 +13,7 @@ const config: Config = {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
         display: ['var(--font-display)', 'var(--font-sans)', 'sans-serif'],
         soft: ['var(--font-soft)', 'var(--font-sans)', 'sans-serif'],
+        round: ['var(--font-round)', 'var(--font-soft)', 'sans-serif'],
         mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
       },
       backgroundImage: {

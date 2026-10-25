@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import type { Locale, Messages } from '@/lib/i18n';
@@ -134,19 +135,37 @@ export function WorkIndex({
                     aspectRatio: '4 / 3',
                   }}
                 >
-                  <div
-                    className="absolute inset-0 opacity-60"
-                    style={{
-                      background: `radial-gradient(120% 90% at 20% 15%, ${accent}33 0%, transparent 60%)`,
-                    }}
-                  />
+                  {project.screenshotPath && !project.screenshotPath.endsWith('.svg') ? (
+                    <>
+                      <Image
+                        src={project.screenshotPath}
+                        alt=""
+                        fill
+                        sizes="300px"
+                        className="object-cover"
+                      />
+                      <div
+                        className="absolute inset-0 opacity-70"
+                        style={{
+                          background: `linear-gradient(160deg, rgba(8,9,12,0.55) 0%, rgba(8,9,12,0.15) 45%, ${accent}44 100%)`,
+                        }}
+                      />
+                    </>
+                  ) : (
+                    <div
+                      className="absolute inset-0 opacity-60"
+                      style={{
+                        background: `radial-gradient(120% 90% at 20% 15%, ${accent}33 0%, transparent 60%)`,
+                      }}
+                    />
+                  )}
                   <span
                     className="absolute bottom-4 right-5 font-display text-[5rem] font-medium leading-none tracking-[-0.06em]"
                     style={{ color: accent, opacity: 0.28 }}
                   >
                     {number}
                   </span>
-                  <span className="absolute left-5 top-4 font-mono text-[9px] uppercase tracking-[0.24em] text-white/40">
+                  <span className="absolute left-5 top-4 font-mono text-[9px] uppercase tracking-[0.24em] text-white/60">
                     {categoryFor(project, locale)}
                   </span>
                 </div>
