@@ -9,7 +9,7 @@
     },
     "resume": {
       "title": "Resume — Mehmet Kum",
-      "description": "A chronology of education, firefighting and leadership roles at ASKı."
+      "description": "A chronology of education, firefighting and leadership roles at ASKI."
     },
     "articles": {
       "title": "Articles — Mehmet Kum",
@@ -61,7 +61,6 @@
   "home": {
     "hero": {
       "availability": "Open to new projects",
-      "since": "Since 2005",
       "blurb": "Problems that begin in the field need to become software, and software needs to settle into the daily rhythm of institutions. Fire, water and data — the same engineering discipline in all three.",
       "cta": "See the work"
     },
@@ -95,15 +94,15 @@
     "title": "An engineering practice where code, fire and city management meet.",
     "body": [
       "I graduated from Hacettepe University in Computer Engineering in 2005 and joined the Ankara Metropolitan Municipality Fire Department in 2008. Nearly a decade of firefighting followed: building teams, running operations and carrying decision responsibility in emergencies.",
-      "In 2018 I moved to ASKı, the city's water and wastewater utility. Branch management and head-of-department years centred on water and wastewater infrastructure, operational transformation and digitalisation. Today I serve as a Senior Specialist at ASKı.",
+      "In 2018 I moved to ASKI, the city's water and wastewater utility. Branch management and head-of-department years centred on water and wastewater infrastructure, operational transformation and digitalisation. Today I serve as a Senior Specialist at ASKI.",
       "Software continued alongside all of this. İPEK Baca CRM and SimaLogistic SaaS emerged from turning field needs directly into product."
     ],
     "cta": "Read the resume",
     "stats": [
       { "value": 18, "suffix": "+", "label": "Years in Public Sector" },
       { "value": 9, "suffix": "+", "label": "Years Leading Fire Ops" },
-      { "value": 7, "suffix": "+", "label": "Years in ASKı Leadership" },
-      { "value": 2, "suffix": "", "label": "SaaS Products Live" }
+      { "value": 7, "suffix": "+", "label": "Years in ASKI Leadership" },
+      { "value": 4, "suffix": "", "label": "SaaS Products Live" }
     ]
   },
   "resume": {

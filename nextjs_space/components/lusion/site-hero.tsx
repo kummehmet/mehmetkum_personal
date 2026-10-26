@@ -6,10 +6,9 @@ import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import type { Locale, Messages } from '@/lib/i18n';
 import { AshMark } from '@/components/lusion/ash-mark';
 
-const roles = ['Bilgisayar Mühendisi', 'Kamu Yöneticisi', 'İtfaiyeci'];
-
 export function SiteHero({ locale, t }: { locale: Locale; t: Messages }) {
   const reduce = useReducedMotion();
+  const roles = t.hero.subtitle.split(' · ');
 
   return (
     <section className="relative flex min-h-[100svh] flex-col justify-between overflow-hidden bg-[#08090c] px-6 pb-8 pt-28 text-white md:px-10 lg:px-[72px]">
@@ -47,12 +46,6 @@ export function SiteHero({ locale, t }: { locale: Locale; t: Messages }) {
           >
             <AshMark text="MK" className="h-[clamp(7rem,26vw,19rem)]" />
           </motion.div>
-          <div className="mt-3 flex justify-end">
-            <span className="hidden items-center gap-3 font-mono text-[10px] uppercase tracking-[0.22em] text-white/35 md:flex">
-              <span className="h-px w-16 bg-white/20" />
-              {t.home.hero.since}
-            </span>
-          </div>
         </div>
       </div>
 
@@ -64,9 +57,9 @@ export function SiteHero({ locale, t }: { locale: Locale; t: Messages }) {
           className="md:col-span-5"
         >
           <ul className="space-y-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-white/55">
-            {roles.map((role, index) => (
-              <li key={role} className="flex items-baseline gap-3">
-                <span className="text-white/20">0{index + 1}</span>
+            {roles.map((role) => (
+              <li key={role} className="flex items-center gap-3">
+                <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff5a1f]" />
                 {role}
               </li>
             ))}

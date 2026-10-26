@@ -6,12 +6,12 @@ export const seedData: LocalDatabase = {
       id: 'resume-1',
       titleTr: 'Kıdemli Uzman',
       titleEn: 'Senior Specialist',
-      orgTr: 'ASKı Genel Müdürlüğü',
-      orgEn: 'ASKı General Directorate',
+      orgTr: 'ASKİ Genel Müdürlüğü',
+      orgEn: 'ASKI General Directorate',
       descTr:
-        'ASKı Genel Müdürlüğü bünyesinde su ve atıksu altyapısının operasyonel yönetimi, kurumsal dijitalleşme programları ve stratejik planlama çalışmaları bu görevin kapsamında. Saha verisini karar mekanizmasına taşıyan iç araçların tasarımı ve yönetimi de aynı kapsamda yürüyor.',
+        'ASKİ Genel Müdürlüğü bünyesinde su ve atıksu altyapısının operasyonel yönetimi, kurumsal dijitalleşme programları ve stratejik planlama çalışmaları bu görevin kapsamında. Saha verisini karar mekanizmasına taşıyan iç araçların tasarımı ve yönetimi de aynı kapsamda yürüyor.',
       descEn:
-        'At ASKı, this role covers operational management of water and wastewater infrastructure, corporate digitalisation programmes and strategic planning — including the design and upkeep of internal tools that turn field data into decisions.',
+        'At ASKI, this role covers operational management of water and wastewater infrastructure, corporate digitalisation programmes and strategic planning — including the design and upkeep of internal tools that turn field data into decisions.',
       startDate: '2025-10-01',
       endDate: null,
       isCurrent: true,
@@ -24,8 +24,8 @@ export const seedData: LocalDatabase = {
       id: 'resume-2',
       titleTr: 'Bilgi İşlem Dairesi Başkanı',
       titleEn: 'Head of Information Technology Department',
-      orgTr: 'ASKı Genel Müdürlüğü',
-      orgEn: 'ASKı General Directorate',
+      orgTr: 'ASKİ Genel Müdürlüğü',
+      orgEn: 'ASKI General Directorate',
       descTr:
         'Bilgi İşlem Dairesi Başkanlığı döneminde kurumun bilişim stratejisi, altyapı yatırımları ve yazılım ekipleri bu görevin sorumluluk alanındaydı. Kurumsal dijital dönüşüm programlarının yol haritası ve kritik sistemlerin sürekliliği de aynı dönemde yürütüldü.',
       descEn:
@@ -42,8 +42,8 @@ export const seedData: LocalDatabase = {
       id: 'resume-3',
       titleTr: 'Yazılım Uygulama ve Geliştirme Şube Müdürü',
       titleEn: 'Software Application & Development Branch Manager',
-      orgTr: 'ASKı Genel Müdürlüğü',
-      orgEn: 'ASKı General Directorate',
+      orgTr: 'ASKİ Genel Müdürlüğü',
+      orgEn: 'ASKI General Directorate',
       descTr:
         'Yazılım uygulama ve geliştirme şubesi müdürlüğü döneminde iç ürün portföyünün tamamı bu göreve bağlıydı: ürün önceliklendirme, geliştirme süreçleri, entegrasyon projeleri ve saha ekipleriyle ortak çalışma düzeni.',
       descEn:
@@ -60,8 +60,8 @@ export const seedData: LocalDatabase = {
       id: 'resume-7',
       titleTr: 'Yazılım Geliştirme Şefi',
       titleEn: 'Software Development Chief',
-      orgTr: 'ASKı Genel Müdürlüğü',
-      orgEn: 'ASKı General Directorate',
+      orgTr: 'ASKİ Genel Müdürlüğü',
+      orgEn: 'ASKI General Directorate',
       descTr:
         'Yazılım geliştirme şefliği döneminde geliştirici ekiplerin teknik liderliği, kod standartları, sürüm yönetimi ve kurumsal sistem entegrasyonları bu görevin ana başlıklarıydı.',
       descEn:
@@ -78,12 +78,12 @@ export const seedData: LocalDatabase = {
       id: 'resume-8',
       titleTr: 'Proje Yöneticisi',
       titleEn: 'Project Manager',
-      orgTr: 'ASKı Genel Müdürlüğü',
-      orgEn: 'ASKı General Directorate',
+      orgTr: 'ASKİ Genel Müdürlüğü',
+      orgEn: 'ASKI General Directorate',
       descTr:
-        'ASKı\'daki proje yöneticiliği döneminde sayaç, tahsilat ve saha hizmetlerine yönelik yazılım projeleri uçtan uca yürütüldü: gereksinim analizi, tedarikçi koordinasyonu, takvim ve bütçe takibi.',
+        'ASKİ\'deki proje yöneticiliği döneminde sayaç, tahsilat ve saha hizmetlerine yönelik yazılım projeleri uçtan uca yürütüldü: gereksinim analizi, tedarikçi koordinasyonu, takvim ve bütçe takibi.',
       descEn:
-        'As project manager at ASKı, software projects for metering, collection and field services were run end to end: requirements analysis, vendor coordination, schedule and budget tracking.',
+        'As project manager at ASKI, software projects for metering, collection and field services were run end to end: requirements analysis, vendor coordination, schedule and budget tracking.',
       startDate: '2018-01-01',
       endDate: '2020-01-01',
       isCurrent: false,
@@ -112,14 +112,14 @@ export const seedData: LocalDatabase = {
     },
     {
       id: 'resume-5',
-      titleTr: 'İtfaiye Şube Müdürlüğü',
-      titleEn: 'Fire Branch Manager',
-      orgTr: 'Ankara Büyükşehir Belediyesi İtfaiye Müdürlüğü',
-      orgEn: 'Ankara Metropolitan Municipality Fire Department',
+      titleTr: 'İtfaiye Müdahale Şube Müdürlüğü',
+      titleEn: 'Fire Response Branch Manager',
+      orgTr: 'Ankara Büyükşehir Belediyesi',
+      orgEn: 'Ankara Metropolitan Municipality',
       descTr:
-        'İtfaiye şube müdürlüğü yıllarında teşkilatın modernleşmesi gündemin ana başlığıydı: yeni istasyonların kurulması, teknik ekipman yönetiminin kurumsallaştırılması ve genç personel için yetkinlik programları.',
+        'İtfaiye müdahale şube müdürlüğü yıllarında teşkilatın modernleşmesi gündemin ana başlığıydı: yeni istasyonların kurulması, teknik ekipman yönetiminin kurumsallaştırılması ve genç personel için yetkinlik programları.',
       descEn:
-        'During the fire branch manager years, modernisation was the main theme: opening new stations, institutionalising technical equipment management and building competence programmes for young staff.',
+        'During the fire response branch manager years, modernisation was the main theme: opening new stations, institutionalising technical equipment management and building competence programmes for young staff.',
       startDate: '2008-03-01',
       endDate: '2012-12-31',
       isCurrent: false,
@@ -179,7 +179,7 @@ Her yeni sürüm, sahada en az bir ekibin gerçek bir vardiyasında kullanılmad
 
 ## Kural 2: Veri modeli kurumun modelini yansıtmalı
 
-İtfaiye bir "vaka" açar, ASKı bir "abone" açar. Bu iki kavramı tek bir tabloya sıkıştırmak, altı ay sonra her iki tarafın da verisini bozar. Alan adları, kurumun konuştuğu kelimeler olmalıdır.
+İtfaiye bir "vaka" açar, ASKİ bir "abone" açar. Bu iki kavramı tek bir tabloya sıkıştırmak, altı ay sonra her iki tarafın da verisini bozar. Alan adları, kurumun konuştuğu kelimeler olmalıdır.
 
 \`\`\`ts
 // Kötü: herkes için geçerli görünen, kimse için doğru olmayan model
@@ -529,7 +529,7 @@ Bu siteyi kurmamın sebebi de bu: iki hayatı tek bir yerde tutmak.`,
       titleTr: 'Saha Yönetim Modülü',
       titleEn: 'Field Operations Module',
       descriptionTr:
-        'KAMU kurumları için saha ekiplerinin vardiya, görev ve araç kullanımını tek panelden yönetecek modül. Şu anda pilot uygulama aşamasında.',
+        'Kamu kurumları için saha ekiplerinin vardiya, görev ve araç kullanımını tek panelden yönetecek modül. Şu anda pilot uygulama aşamasında.',
       descriptionEn:
         'A module for public institutions to manage shifts, tasks and vehicle usage of field teams from a single panel. Currently in pilot phase.',
       liveUrl: null,

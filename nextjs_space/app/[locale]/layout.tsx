@@ -102,7 +102,7 @@ export default async function LocaleLayout({
     },
     worksFor: {
       '@type': 'Organization',
-      name: 'ASKı Genel Müdürlüğü',
+      name: 'ASKİ Genel Müdürlüğü',
     },
   };
 

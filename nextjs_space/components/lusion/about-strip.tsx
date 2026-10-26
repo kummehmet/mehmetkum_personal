@@ -19,23 +19,6 @@ export function AboutStrip({ locale, t }: { locale: Locale; t: Messages }) {
               aria-hidden="true"
               className="absolute inset-0 bg-gradient-to-t from-[#08090c] via-transparent to-transparent"
             />
-
-            <span className="absolute left-4 top-3 font-mono text-[9px] tracking-[0.3em] text-white/35">
-              [ 001 ]
-            </span>
-            <span className="absolute right-4 top-3 font-mono text-[9px] uppercase tracking-[0.24em] text-white/30">
-              {t.about.eyebrow}
-            </span>
-
-            <div className="absolute inset-x-4 bottom-4">
-              <p className="font-display text-lg font-medium tracking-[-0.02em] text-white/90">
-                Mehmet Kum
-              </p>
-              <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.22em] text-white/40">
-                {t.about.role}
-              </p>
-              <span aria-hidden="true" className="mt-3 block h-px w-28 bg-white/25" />
-            </div>
           </div>
         </div>
 
