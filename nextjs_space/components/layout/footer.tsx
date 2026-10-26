@@ -18,10 +18,11 @@ export function Footer({ locale, t }: { locale: Locale; t: Messages }) {
 
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-black">
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[60%] bg-[radial-gradient(ellipse_60%_60%_at_50%_100%,rgba(255,69,0,0.16),transparent_70%)]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[78%] bg-[radial-gradient(ellipse_78%_80%_at_50%_115%,rgba(255,77,0,0.34),rgba(255,90,31,0.12)_55%,transparent_72%)]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[38%] bg-[radial-gradient(ellipse_55%_70%_at_50%_118%,rgba(255,140,64,0.4),transparent_75%)]" />
 
-      <div className="relative mx-auto max-w-[1600px] px-6 py-16 md:px-10 lg:px-[72px]">
-        <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
+      <div className="relative mx-auto max-w-[1600px] px-6 py-20 md:px-10 lg:px-[72px] lg:py-24">
+        <div className="grid gap-14 lg:grid-cols-[1.1fr_1.45fr_1.45fr] lg:gap-10">
           <div>
             <p className="max-w-sm text-sm leading-relaxed text-white/50">{t.footer.tagline}</p>
             <div className="mt-6 flex items-center gap-3">
@@ -29,7 +30,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Messages }) {
             </div>
           </div>
 
-          <nav className="flex flex-col gap-3">
+          <nav className="flex flex-col gap-4">
             <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/30">
               {t.nav.menu}
             </span>
@@ -37,7 +38,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Messages }) {
               <Link
                 key={link.href}
                 href={link.href}
-                className="group flex w-fit items-center gap-1 text-sm text-white/70 transition-colors hover:text-white"
+                className="group flex w-fit items-center gap-1.5 text-[15px] leading-none text-white/70 transition-colors hover:text-white"
               >
                 {link.label}
                 <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-100" />
@@ -45,7 +46,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Messages }) {
             ))}
           </nav>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-4">
             <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/30">
               Elsewhere
             </span>
@@ -53,7 +54,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Messages }) {
               href="https://www.linkedin.com/in/mehmetkum"
               target="_blank"
               rel="noreferrer noopener"
-              className="group flex w-fit items-center gap-1 text-sm text-white/70 transition-colors hover:text-white"
+              className="group flex w-fit items-center gap-1.5 text-[15px] leading-none text-white/70 transition-colors hover:text-white"
             >
               LinkedIn
               <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-100" />
@@ -62,7 +63,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Messages }) {
               href="https://ipekbaca.com"
               target="_blank"
               rel="noreferrer noopener"
-              className="group flex w-fit items-center gap-1 text-sm text-white/70 transition-colors hover:text-white"
+              className="group flex w-fit items-center gap-1.5 text-[15px] leading-none text-white/70 transition-colors hover:text-white"
             >
               ipekbaca.com
               <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-100" />
@@ -71,14 +72,14 @@ export function Footer({ locale, t }: { locale: Locale; t: Messages }) {
               href="https://simalogistic.com"
               target="_blank"
               rel="noreferrer noopener"
-              className="group flex w-fit items-center gap-1 text-sm text-white/70 transition-colors hover:text-white"
+              className="group flex w-fit items-center gap-1.5 text-[15px] leading-none text-white/70 transition-colors hover:text-white"
             >
               simalogistic.com
               <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-100" />
             </a>
             <a
               href="mailto:mehmet@mehmetkum.com"
-              className="group flex w-fit items-center gap-1 text-sm text-white/70 transition-colors hover:text-white"
+              className="group flex w-fit items-center gap-1.5 text-[15px] leading-none text-white/70 transition-colors hover:text-white"
             >
               mehmet@mehmetkum.com
               <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-100" />

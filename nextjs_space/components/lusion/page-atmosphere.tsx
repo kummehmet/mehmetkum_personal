@@ -31,7 +31,7 @@ function rand(min: number, max: number) {
 
 /**
  * Ana sayfanın tamamında çalışan atmosfer katmanı.
- * - Tıklama: imleç noktasından su damlaları fışkırır.
+ * - Tıklama: yalnızca footer alanında (#birlikte + footer) su damlaları fışkırır.
  * - Basılı tutma: su akmaya devam eder.
  * - Alt kenar: sürekli ateş yanar.
  */
@@ -55,15 +55,21 @@ export function PageAtmosphere() {
     const drops: Drop[] = [];
     const flames: Flame[] = [];
 
-    const pointer = { x: -9999, y: -9999, pressed: false, inside: false };
+    const pointer = { x: -9999, y: -9999, pressed: false, inside: false, zone: false };
     let emission = 0;
 
+    const isFooterZone = (x: number, y: number) => {
+      const under = document.elementFromPoint(x, y);
+      if (!under) return false;
+      return Boolean(under.closest('footer, #birlikte'));
+    };
+
     const spawnDrop = (x: number, y: number): Drop => ({
-      x: x + rand(-10, 10),
-      y: y + rand(-8, 8),
-      vx: rand(-2.6, 2.6),
-      vy: rand(-6.4, -1.2),
-      r: rand(2.85, 8.1),
+      x: x + rand(-12, 12),
+      y: y + rand(-10, 10),
+      vx: rand(-3.2, 3.2),
+      vy: rand(-8.6, -2.4),
+      r: rand(8.55, 24.3),
       alpha: rand(0.5, 0.9),
       wobble: Math.random() * Math.PI * 2,
       wobbleSpeed: rand(0.03, 0.075),
@@ -72,11 +78,11 @@ export function PageAtmosphere() {
 
     const spawnFlame = (initial: boolean): Flame => ({
       x: rand(-20, width + 20),
-      y: initial ? rand(height - 90, height + 10) : height + rand(4, 30),
-      r: rand(10, 46),
-      speed: rand(0.6, 2.1),
+      y: initial ? rand(height - 92, height + 10) : height + rand(4, 30),
+      r: rand(14, 58),
+      speed: rand(0.7, 2.5),
       drift: rand(-0.45, 0.45),
-      alpha: rand(0.22, 0.6),
+      alpha: rand(0.3, 0.75),
       hue: rand(14, 38),
       phase: Math.random() * Math.PI * 2,
     });
@@ -91,7 +97,7 @@ export function PageAtmosphere() {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
       flames.length = 0;
-      const count = reduced ? 20 : Math.min(90, Math.round(width / 18));
+      const count = reduced ? 24 : Math.min(120, Math.round(width / 13));
       for (let i = 0; i < count; i += 1) flames.push(spawnFlame(true));
     };
 
@@ -99,12 +105,12 @@ export function PageAtmosphere() {
       ctx.save();
       ctx.globalCompositeOperation = 'source-over';
 
-      const bed = ctx.createLinearGradient(0, height - 130, 0, height);
+      const bed = ctx.createLinearGradient(0, height - 180, 0, height);
       bed.addColorStop(0, 'rgba(255, 90, 31, 0)');
-      bed.addColorStop(0.6, 'rgba(255, 90, 31, 0.05)');
-      bed.addColorStop(1, 'rgba(255, 106, 26, 0.16)');
+      bed.addColorStop(0.55, 'rgba(255, 90, 31, 0.08)');
+      bed.addColorStop(1, 'rgba(255, 106, 26, 0.3)');
       ctx.fillStyle = bed;
-      ctx.fillRect(0, height - 130, width, 130);
+      ctx.fillRect(0, height - 180, width, 180);
 
       ctx.globalCompositeOperation = 'lighter';
       for (const flame of flames) {
@@ -112,10 +118,10 @@ export function PageAtmosphere() {
           flame.y -= flame.speed;
           flame.x += flame.drift + Math.sin(time * 0.0012 + flame.phase) * 0.6;
           flame.phase += 0.02;
-          if (flame.y < height - 150) Object.assign(flame, spawnFlame(false));
+          if (flame.y < height - 200) Object.assign(flame, spawnFlame(false));
         }
 
-        const fade = Math.max(0, Math.min(1, (flame.y - (height - 150)) / 150));
+        const fade = Math.max(0, Math.min(1, (flame.y - (height - 200)) / 200));
         const opacity = flame.alpha * fade;
         if (opacity <= 0.005) continue;
 
@@ -138,7 +144,7 @@ export function PageAtmosphere() {
         const drop = drops[i];
         drop.vy += 0.34;
         drop.vx *= 0.994;
-        drop.x += drop.vx + Math.sin(drop.wobble) * 0.45;
+        drop.x += drop.vx + Math.sin(drop.wobble) * (0.4 + drop.r * 0.045);
         drop.y += drop.vy;
         drop.wobble += drop.wobbleSpeed;
         drop.life -= 0.0035;
@@ -186,7 +192,7 @@ export function PageAtmosphere() {
       time = now;
       ctx.clearRect(0, 0, width, height);
 
-      if (pointer.pressed && pointer.inside) {
+      if (pointer.pressed && pointer.inside && pointer.zone) {
         emission += 1;
         if (emission % 2 === 0) emit(reduced ? 1 : 3);
       }
@@ -201,13 +207,20 @@ export function PageAtmosphere() {
       pointer.y = event.clientY;
       pointer.inside = true;
       pointer.pressed = true;
-      emit(reduced ? 6 : 26);
+      pointer.zone = isFooterZone(event.clientX, event.clientY);
+      if (pointer.zone) {
+        emit(reduced ? 8 : 22);
+      }
     };
 
     const onMove = (event: PointerEvent) => {
       pointer.x = event.clientX;
       pointer.y = event.clientY;
       pointer.inside = true;
+      if (pointer.pressed) {
+        // Basılı tutarken alan değişirse yayım o anda güncellenir.
+        pointer.zone = isFooterZone(event.clientX, event.clientY);
+      }
     };
 
     const onUp = () => {

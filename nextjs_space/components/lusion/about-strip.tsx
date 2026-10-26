@@ -1,14 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowUpRight, Database, Droplets, Flame } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import type { Locale, Messages } from '@/lib/i18n';
 import { StatCounter } from '@/components/shared/stat-counter';
-
-const badges = [
-  { icon: Flame, label: 'Fire', color: '#ff5a1f' },
-  { icon: Droplets, label: 'Water', color: '#0ea5b7' },
-  { icon: Database, label: 'Data', color: '#0f766e' },
-];
+import { ParticlePortrait } from '@/components/lusion/particle-portrait';
 
 export function AboutStrip({ locale, t }: { locale: Locale; t: Messages }) {
   return (
@@ -18,40 +12,30 @@ export function AboutStrip({ locale, t }: { locale: Locale; t: Messages }) {
     >
       <div className="mx-auto grid max-w-[1600px] gap-10 md:grid-cols-12">
         <div className="md:col-span-4">
-          <div className="relative aspect-[4/5] overflow-hidden border border-white/10 bg-[#0c0e12]">
-            <Image
-              src="/images/photos/portre-01.jpg"
-              alt="Mehmet Kum"
-              fill
-              sizes="(max-width: 768px) 100vw, 33vw"
-              className="object-cover"
-            />
+          <div className="relative aspect-[4/5] overflow-hidden border border-white/10 bg-[#050608]">
+            <ParticlePortrait className="absolute inset-0" />
+
             <div
               aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-t from-[#08090c] via-[#08090c]/25 to-transparent"
+              className="absolute inset-0 bg-gradient-to-t from-[#08090c] via-transparent to-transparent"
             />
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 opacity-30 mix-blend-overlay [background-image:linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:46px_46px]"
-            />
-            <div className="absolute inset-x-4 bottom-4 flex flex-wrap gap-1.5">
-              {badges.map((badge) => {
-                const Icon = badge.icon;
-                return (
-                  <span
-                    key={badge.label}
-                    className="flex items-center gap-1.5 border border-white/12 bg-[#08090c]/70 px-2 py-1 font-mono text-[9px] uppercase tracking-[0.16em] text-white/55 backdrop-blur-sm"
-                  >
-                    <Icon className="h-2.5 w-2.5" style={{ color: badge.color }} />
-                    {badge.label}
-                  </span>
-                );
-              })}
-            </div>
-            <span className="absolute right-4 top-4 flex items-center gap-1.5 font-mono text-[9px] uppercase tracking-[0.2em] text-white/35">
-              <span className="h-1 w-1 animate-flicker rounded-full bg-[#0f766e]" />
-              online
+
+            <span className="absolute left-4 top-3 font-mono text-[9px] tracking-[0.3em] text-white/35">
+              [ 001 ]
             </span>
+            <span className="absolute right-4 top-3 font-mono text-[9px] uppercase tracking-[0.24em] text-white/30">
+              {t.about.eyebrow}
+            </span>
+
+            <div className="absolute inset-x-4 bottom-4">
+              <p className="font-display text-lg font-medium tracking-[-0.02em] text-white/90">
+                Mehmet Kum
+              </p>
+              <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.22em] text-white/40">
+                {t.about.role}
+              </p>
+              <span aria-hidden="true" className="mt-3 block h-px w-28 bg-white/25" />
+            </div>
           </div>
         </div>
 
