@@ -28,13 +28,15 @@ const VARIANTS = {
     ],
     baseStops: ['rgba(245, 235, 221, 0.2)', 'rgba(210, 193, 172, 0.12)', 'rgba(255, 122, 58, 0.1)'],
     glow: 'rgba(255, 98, 38, 0.16)',
-    density: 1,
+    density: 1.15,
     force: 1,
     radiusFactor: 0.42,
     grainScale: 4.6,
     sizeRange: [0.55, 1.85] as [number, number],
     alphaRange: [0.3, 0.95] as [number, number],
     tilt: true,
+    capDesktop: 12400,
+    capMobile: 6600,
   },
   dark: {
     sprites: [
@@ -52,6 +54,8 @@ const VARIANTS = {
     sizeRange: [0.7, 2.2] as [number, number],
     alphaRange: [0.2, 0.72] as [number, number],
     tilt: false,
+    capDesktop: 8600,
+    capMobile: 4600,
   },
 } as const;
 
@@ -83,10 +87,14 @@ function makeSprite(color: string) {
 export function AshMark({
   text,
   variant = 'light',
+  fontClass = 'font-round',
+  fontWeight = 800,
   className,
 }: {
   text: string;
   variant?: AshVariant;
+  fontClass?: string;
+  fontWeight?: number;
   className?: string;
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -111,6 +119,7 @@ export function AshMark({
     let textWidth = 0;
     let radius = 160;
     let frame = 0;
+    let visible = true;
 
     let grains: Grain[] = [];
     let sprites: HTMLCanvasElement[] = [];
@@ -128,7 +137,7 @@ export function AshMark({
     const tilt = { x: 0, y: 0, targetX: 0, targetY: 0 };
 
     const setFont = (target: CanvasRenderingContext2D, size: number) => {
-      target.font = `800 ${size}px ${family}`;
+      target.font = `${fontWeight} ${size}px ${family}`;
     };
 
     const measure = (size: number) => {
@@ -245,7 +254,7 @@ export function AshMark({
 
       sprites = config.sprites.map(makeSprite);
 
-      const cap = width < 768 ? 4600 : 8600;
+      const cap = width < 768 ? config.capMobile : config.capDesktop;
       const count = reduced
         ? 2600
         : Math.max(1200, Math.min(cap, Math.round(textWidth * fontSize * 0.032 * config.density)));
@@ -378,8 +387,11 @@ export function AshMark({
 
     const onVisibility = () => {
       cancelAnimationFrame(frame);
-      if (!document.hidden) frame = requestAnimationFrame(step);
+      if (!document.hidden && visible) frame = requestAnimationFrame(step);
     };
+
+    // Ekran dışındaki küllü işaret KSA dongusunu yarim birak (sayfada üç işaret var)
+    let observer: IntersectionObserver | null = null;
 
     let resizeTimer = 0;
     const onResize = () => {
@@ -396,11 +408,38 @@ export function AshMark({
 
     build();
 
+    // Fontlar async yüklenirse ilk ölçümde yedek fontla sıkısir — hazır olunca bir kez yeniden kur
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(() => {
+        if (canvas.isConnected) {
+          build();
+          if (reduced) {
+            ctx.clearRect(0, 0, width, height);
+            paintBase();
+            drawGrains(false);
+          }
+        }
+      }).catch(() => {});
+    }
+
     if (reduced) {
       paintBase();
       drawGrains(false);
     } else {
       frame = requestAnimationFrame(step);
+    }
+
+    if (!reduced && typeof IntersectionObserver === 'function') {
+      observer = new IntersectionObserver((entries) => {
+        visible = entries.some((entry) => entry.isIntersecting);
+        if (visible && !document.hidden) {
+          cancelAnimationFrame(frame);
+          frame = requestAnimationFrame(step);
+        } else {
+          cancelAnimationFrame(frame);
+        }
+      });
+      observer.observe(canvas);
     }
 
     window.addEventListener('pointermove', onMove, { passive: true });
@@ -411,6 +450,7 @@ export function AshMark({
 
     return () => {
       cancelAnimationFrame(frame);
+      if (observer) observer.disconnect();
       window.clearTimeout(resizeTimer);
       window.removeEventListener('pointermove', onMove);
       window.removeEventListener('blur', onLeave);
@@ -418,13 +458,13 @@ export function AshMark({
       document.removeEventListener('visibilitychange', onVisibility);
       window.removeEventListener('resize', onResize);
     };
-  }, [text, variant]);
+  }, [text, variant, fontClass, fontWeight]);
 
   return (
     <div className="relative w-full" aria-hidden="true">
       <canvas
         ref={canvasRef}
-        className={`block w-full font-round will-change-transform ${className ?? 'h-full'}`}
+        className={`block w-full ${fontClass} will-change-transform ${className ?? 'h-full'}`}
       />
     </div>
   );

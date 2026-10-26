@@ -19,7 +19,13 @@ export function FooterType({ text }: { text: string }) {
   return (
     <div ref={ref} className="relative">
       <motion.div style={{ opacity, y }} aria-hidden="true">
-        <AshMark text={text} variant="dark" className="h-[clamp(2.2rem,6.4vw,7rem)]" />
+        <AshMark
+          text={text}
+          variant="dark"
+          fontClass="font-round2"
+          fontWeight={700}
+          className="h-[clamp(2.2rem,6.4vw,7rem)]"
+        />
       </motion.div>
     </div>
   );

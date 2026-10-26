@@ -4,9 +4,15 @@ import Link from 'next/link';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import type { Locale, Messages } from '@/lib/i18n';
+import { AshMark } from '@/components/lusion/ash-mark';
 
 export function WorkTogether({ locale, t }: { locale: Locale; t: Messages }) {
   const reduce = useReducedMotion();
+
+  const bigTitle =
+    locale === 'tr'
+      ? t.home.together.title.toLocaleUpperCase('tr-TR')
+      : t.home.together.title.toLocaleUpperCase('en-US');
 
   return (
     <section
@@ -34,9 +40,18 @@ export function WorkTogether({ locale, t }: { locale: Locale; t: Messages }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-6xl font-display text-[clamp(2.6rem,8.6vw,8rem)] font-medium uppercase leading-[0.88] tracking-[-0.05em]"
+            className="w-full max-w-6xl text-[clamp(2.6rem,8.6vw,8rem)] font-medium uppercase leading-[0.88] tracking-[-0.05em]"
           >
-            {t.home.together.title}
+            <span className="sr-only">{t.home.together.title}</span>
+            <span aria-hidden="true" className="block">
+              <AshMark
+                text={bigTitle}
+                variant="light"
+                fontClass="font-round2"
+                fontWeight={700}
+                className="h-[clamp(3rem,10.2vw,9rem)]"
+              />
+            </span>
           </motion.h2>
           <motion.p
             initial={reduce ? false : { opacity: 0 }}

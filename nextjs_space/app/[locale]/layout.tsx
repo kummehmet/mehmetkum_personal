@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono, Manrope, Nunito, Space_Grotesk } from 'next/font/google';
+import { Comfortaa, Inter, JetBrains_Mono, Manrope, Nunito, Space_Grotesk } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import '../globals.css';
 import { getMessages, isLocale, locales } from '@/lib/i18n';
@@ -15,6 +15,11 @@ const nunito = Nunito({
   subsets: ['latin', 'latin-ext'],
   weight: ['700', '800', '900'],
   variable: '--font-round',
+});
+const comfortaa = Comfortaa({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['700'],
+  variable: '--font-round2',
 });
 
 export const viewport = {
@@ -103,7 +108,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="dark" suppressHydrationWarning>
-      <body className={`${inter.variable} ${spaceGrotesk.variable} ${manrope.variable} ${mono.variable} ${nunito.variable} bg-background font-sans text-foreground antialiased`}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} ${manrope.variable} ${mono.variable} ${nunito.variable} ${comfortaa.variable} bg-background font-sans text-foreground antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           {children}
           <Toaster />
