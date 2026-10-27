@@ -170,18 +170,30 @@ export function PageAtmosphere() {
         ctx.arc(0, 0, drop.r * 2.2, 0, Math.PI * 2);
         ctx.fill();
 
-        // Gerçek damla silueti: yuvarlak alt, sivri üst
+        // Hız arttıkça sivri uç yuvarlanır: yerçekimi etkisiyle simetrik forma geçiş
+        const m = Math.max(0, Math.min(1, (drop.vy - 3) / 9));
+        const tipY = (-1.5 + 0.5 * m) * drop.r;
+        const c1x = (0.35 + 0.07 * m) * drop.r;
+        const c1y = (-1.1 + 0.2 * m) * drop.r;
+        const c2y = (-0.55 + 0.2 * m) * drop.r;
+
+        // Damla silueti: oval alt gövde (yay), üstte damla ucu
         ctx.fillStyle = `hsla(195, 72%, 41%, ${opacity})`;
         ctx.beginPath();
-        ctx.moveTo(0, -drop.r * 1.28);
-        ctx.bezierCurveTo(drop.r * 0.64, -drop.r * 0.55, drop.r * 0.9, drop.r * 0.16, 0, drop.r * 0.87);
-        ctx.bezierCurveTo(-drop.r * 0.9, drop.r * 0.16, -drop.r * 0.64, -drop.r * 0.55, 0, -drop.r * 1.28);
+        ctx.moveTo(0, tipY);
+        ctx.bezierCurveTo(c1x, c1y, drop.r * 0.95, c2y, drop.r * 0.95, drop.r * 0.2);
+        ctx.arc(0, drop.r * 0.2, drop.r * 0.95, 0, Math.PI, false);
+        ctx.bezierCurveTo(-c1x, c1y, -drop.r * 0.95, c2y, 0, tipY);
         ctx.fill();
 
-        // Mat görünüm: tek, yumuşak ve küçük parıltı
-        ctx.fillStyle = `hsla(188, 88%, 88%, ${opacity * 0.45})`;
+        // Mat sheen: geniş ve yumuşak, ek olarak altta küçük nokta
+        ctx.fillStyle = `hsla(188, 88%, 92%, ${opacity * 0.26})`;
         ctx.beginPath();
-        ctx.ellipse(-drop.r * 0.3, -drop.r * 0.2, drop.r * 0.16, drop.r * 0.24, 0, 0, Math.PI * 2);
+        ctx.ellipse(-drop.r * 0.14, -drop.r * 0.14, drop.r * 0.32, drop.r * 0.46, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = `hsla(188, 88%, 90%, ${opacity * 0.5 })`;
+        ctx.beginPath();
+        ctx.ellipse(-drop.r * 0.42, drop.r * 0.42, drop.r * 0.13, drop.r * 0.19, 0, 0, Math.PI * 2);
         ctx.fill();
         ctx.restore();
       }
