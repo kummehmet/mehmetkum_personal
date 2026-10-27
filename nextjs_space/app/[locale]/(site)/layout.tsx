@@ -5,6 +5,10 @@ import { Footer } from '@/components/layout/footer';
 import { SmoothScroll } from '@/components/layout/smooth-scroll';
 import { CustomCursor } from '@/components/shared/custom-cursor';
 
+// Tüm içerik sayfaları veritabanından okur; panelden yapılan düzenlemelerin
+// anında canlıya düşmesi için statik derlemeye izin verme.
+export const dynamic = 'force-dynamic';
+
 export default async function SiteLayout({
   children,
   params,
