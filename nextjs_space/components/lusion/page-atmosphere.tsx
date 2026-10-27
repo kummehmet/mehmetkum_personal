@@ -155,29 +155,33 @@ export function PageAtmosphere() {
         }
 
         const opacity = drop.alpha * Math.min(1, drop.life * 1.5);
-        const stretch = Math.min(2.6, 1 + Math.abs(drop.vy) * 0.11);
+        const stretch = Math.min(1.7, 1 + Math.abs(drop.vy) * 0.08);
 
         ctx.save();
         ctx.translate(drop.x, drop.y);
         ctx.scale(1, stretch);
 
-        const glow = ctx.createRadialGradient(0, 0, 0, 0, 0, drop.r * 2.6);
-        glow.addColorStop(0, `hsla(189, 95%, 52%, ${opacity * 0.55})`);
-        glow.addColorStop(0.55, `hsla(190, 90%, 46%, ${opacity * 0.22})`);
-        glow.addColorStop(1, 'hsla(190, 90%, 46%, 0)');
+        const glow = ctx.createRadialGradient(0, 0, 0, 0, 0, drop.r * 2.2);
+        glow.addColorStop(0, `hsla(191, 85%, 54%, ${opacity * 0.32})`);
+        glow.addColorStop(0.6, `hsla(191, 82%, 45%, ${opacity * 0.13})`);
+        glow.addColorStop(1, 'hsla(191, 82%, 45%, 0)');
         ctx.fillStyle = glow;
         ctx.beginPath();
-        ctx.arc(0, 0, drop.r * 2.6, 0, Math.PI * 2);
+        ctx.arc(0, 0, drop.r * 2.2, 0, Math.PI * 2);
         ctx.fill();
 
-        ctx.fillStyle = `hsla(191, 92%, 38%, ${opacity})`;
+        // Gerçek damla silueti: yuvarlak alt, sivri üst
+        ctx.fillStyle = `hsla(195, 72%, 41%, ${opacity})`;
         ctx.beginPath();
-        ctx.ellipse(0, 0, drop.r * 0.6, drop.r, 0, 0, Math.PI * 2);
+        ctx.moveTo(0, -drop.r * 1.28);
+        ctx.bezierCurveTo(drop.r * 0.64, -drop.r * 0.55, drop.r * 0.9, drop.r * 0.16, 0, drop.r * 0.87);
+        ctx.bezierCurveTo(-drop.r * 0.9, drop.r * 0.16, -drop.r * 0.64, -drop.r * 0.55, 0, -drop.r * 1.28);
         ctx.fill();
 
-        ctx.fillStyle = `hsla(186, 100%, 92%, ${opacity * 0.85})`;
+        // Mat görünüm: tek, yumuşak ve küçük parıltı
+        ctx.fillStyle = `hsla(188, 88%, 88%, ${opacity * 0.45})`;
         ctx.beginPath();
-        ctx.ellipse(-drop.r * 0.18, -drop.r * 0.28, drop.r * 0.2, drop.r * 0.32, 0, 0, Math.PI * 2);
+        ctx.ellipse(-drop.r * 0.3, -drop.r * 0.2, drop.r * 0.16, drop.r * 0.24, 0, 0, Math.PI * 2);
         ctx.fill();
         ctx.restore();
       }
