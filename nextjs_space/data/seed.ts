@@ -297,7 +297,9 @@ Bu harita çıkarıldıktan sonra, veri modeli neredeyse kendiliğinden belirir.
 
 ## Yöneticiler için not
 
-Bu çerçeveyi kurumlar arası taşımak, yangın söndürmekten daha zordur. Çünkü yangında karar veren kişi, kendisini en yakından olaya hazır bulur. Kurumda ise kimse "görevli" değildir; görevlilik yazılı olmalıdır.`,
+Bu çerçeveyi kendi kurumuna taşımak, sahada komuta etmekten zordur. Yangında herkesin görevi baştan yazılıdır: kim karar verir, kim söndürür, kim rapor yazar; kimse bunu olay anında birbirine sormaz. Kurum içinde ise görevler çoğu zaman yazısızdır; olay geldiğinde iş "biri ilgilenir" geçer ve kimse sorumluluğu almaz.
+
+Çözüm iki dünyada aynıdır: görevliliği yazıya geçirmek. Kriz anında kimi arayacaksın, kim neye karar verecek, kimi bilgilendirecek — bunları tek sayfada tanımla. Çerçeve kurumda ancak o sayfa yazıldıktan sonra çalışır.`,
       contentEn: null,
       locale: 'tr',
       category: 'FIRE',
@@ -353,39 +355,47 @@ Bunu söylemek zor ama önemli: bir hata düzeltmesi, yeni bir özellik kadar de
     },
     {
       id: 'article-5',
-      slug: 'otuz-yil-sonra-kod-yazmak',
-      titleTr: 'Otuz yıl sonra hâlâ kod yazmak',
-      titleEn: 'Still writing code after thirty years',
+      slug: 'muhendis-programci-itfaiyeci-yonetici',
+      titleTr: 'Mühendis, programcı, itfaiyeci, yönetici',
+      titleEn: 'Engineer, programmer, firefighter, manager',
       summaryTr:
-        'İtfaiyeci olmak, mühendis olmayı bırakmak anlamına gelmiyor. Kişisel bir not.',
+        'Beş kimlik, tek disiplin: belirsizlik altında karar vermek ve sonucunu taşımak. Kişisel bir deneme.',
       summaryEn:
-        'Becoming a firefighter did not mean leaving engineering behind. A personal note.',
-      contentTr: `2005'te üniversiteden mezun olduğumda aklımdaki tek plan şuydu: bir şirket kurup yazılım yapmak. 2008'de İtfaiye'ye girdim. Plan çalışmadı; ama hayat daha ilginç bir yol buldu.
+        'Five identities, one discipline: deciding under uncertainty and carrying the result. A personal essay.',
+      contentTr: `Yirmi yıldır aynı mesleğin beş yüzünü yaşıyorum: mühendis, programcı, itfaiyeci, acil durum tecrübelisi ve yönetici. İsimler farklı görünse de işin özü aynı: belirsizlik altında karar vermek ve sonucunu taşımak. Aralarındaki tek fark, kararın bedelidir.
 
-## Yirmi yıl sonra
+## Mühendis olmak
 
-İtfaiyecilik bana yazılımdan daha zor bir problem seti verdi: yirmi kişilik bir ekibi, üç dakika içinde, karanlıkta ve korkmuş insanlarla birlikte yönlendirmek. Bu bir yazılım problemi değil; ama içinde aynı şey var: belirsizlik altında karar vermek ve bu kararın sonucunu taşımak.
+Mühendislik, yapı inşa etmekten önce bir düşünme düzenidir. Önce sorunun sınırlarını çiz: ne biliyoruz, ne bilmiyoruz, neyi öğrenebiliriz? Sonra en küçük deneyi kur: ölç, değerlendir, yanlışsa hipotezi düzelt. Yanlış bir test sonucu bile değerlidir; çünkü bir şey öğretir. Test edilmemiş varsayım ise hiçbir şey öğretmez.
 
-## Yazılımı bırakmadım
+## Programcı olmak
 
-Sahadan doğan ihtiyaçlar, ihtiyaç olmayan yazılımlardan daha değerliydi. İPEK Baca CRM bir CRM değil, bir "baca temizliği takip ve tahsilat" aracı; her ekranı saha ekibinin saatlerce kullandığı bir arayüz olarak tasarlandı.
+Programcılık, bu düzenin en somut halidir. Kod, niyetin çalıştırılabilir biçimidir; kararı önce zihinde verir, sonra satırlara döker. Makine yazılandan şaşmaz. Bu yüzden ölçmeyen bir sistem karar değil, tahmin üretir; ölçümün olmadığı yerde düzeltme de olmaz.
 
-## Öğrenilenler
+## İtfaiyeci olmak
 
-- **Alan bilgisi, teknolojiden önce gelir.** Neyi çözeceğini bilmeden doğru teknolojiyi seçemezsin.
-- **Yönetmek, kod yazmaktan zordur.** Ama yönetmek için de kod yazmak gerekir.
-- **Kırk yedi yaşındayım ve hâlâ öğreniyorum.** Yeni bir dil öğrenmek, otuz yaşındayken öğrenmekten daha kolay; çünkü niyetin net.
+İtfaiyecilik, aynı düzeni en pahalı ortamda uygulamaktır. Zaman azdır, bilgi eksiktir, yanlışın bedeli geri alınamaz. Sahada belirsizliği azaltmanın tek yolu alışkanlık ve yazılı prosedürdür: komut net, adım belli, kontroller listeli. Karar sürpriz olmamalı; alışkanlık olmalıdır.
 
-Bu siteyi kurmamın sebebi de bu: iki hayatı tek bir yerde tutmak.`,
+## Acil durum tecrübesi olmak
+
+Acil durum tecrübesi olmak, bu alışkanlığı gerçekle sınamaktır. Tatbikatta hata bedava, gerçekte pahalıdır. Her olayın ardından üç soru sorulur: ne işe yaradı, ne yaramadı, hangi bilgi kaç dakikada ulaştı? Raporu olmayan olay unutulur; raporlanan olay alışkanlığa döner.
+
+## Yönetici olmak
+
+Yöneticilik, aynı düzenin ölçek büyütmesidir: kararları tek başına vermek yerine rolleri dağıtmaktır. Kim karar verir, kim uygular, kim ölçer, kim rapor eder. Kriz anında kurumdan istenen, sahada ekipten istenenle aynıdır: net komut, yazılı rol, zamanında rapor.
+
+Beş kimliği bir arada tutmanın yolu da bu: ölçmeyi mühendislikten, kararı programcılıktan, disiplini itfaiyecilikten, sınama ve iyileştirmeyi acil durum tecrübesinden, paylaşmayı yöneticilikten almak.
+
+Bu sitede gördüklerin, bu beş disiplinin aynı anda çalıştığı yerdir.`,
       contentEn: null,
       locale: 'tr',
       category: 'PERSONAL',
-      tags: ['Kişisel', 'Mühendislik', 'İtfaiye'],
+      tags: ['Kişisel', 'Mühendislik', 'Yazılım', 'Yönetim'],
       coverImage: '/images/cover-05.svg',
       published: true,
-      readMinutes: 4,
+      readMinutes: 5,
       createdAt: '2025-10-02T09:00:00.000Z',
-      updatedAt: '2025-10-08T09:00:00.000Z',
+      updatedAt: '2026-10-27T09:00:00.000Z',
     },
   ],
 
