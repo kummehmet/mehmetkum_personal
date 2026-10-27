@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { createMessage, listMessages } from '@/lib/content';
 import { isAuthenticated } from '@/lib/auth';
+import { sendContactNotification } from '@/lib/mail';
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -28,6 +29,7 @@ export async function POST(request: Request) {
   }
 
   await createMessage({ name, email, subject, message });
+  await sendContactNotification({ name, email, subject, message });
   return NextResponse.json({ ok: true }, { status: 201 });
 }
 
