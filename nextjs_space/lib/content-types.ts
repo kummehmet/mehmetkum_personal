@@ -71,12 +71,27 @@ export type ContactMessage = {
   createdAt: string;
 };
 
+export type AboutStat = {
+  value: number;
+  suffix: string;
+  label: string;
+};
+
+export type AboutContent = {
+  eyebrow: string;
+  title: string;
+  cta: string;
+  body: string[];
+  stats: AboutStat[];
+};
+
 export type LocalDatabase = {
   resume: ResumeEntry[];
   articles: Article[];
   gallery: GalleryImage[];
   projects: Project[];
   messages: ContactMessage[];
+  about?: { dataTr: AboutContent; dataEn: AboutContent } | null;
 };
 
 export type ResumeInput = Omit<ResumeEntry, 'id'> & { id?: string };

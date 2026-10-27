@@ -84,6 +84,15 @@ async function main() {
     await prisma.project.upsert({ where: { id: project.id }, create: { id: project.id, ...data }, update: data });
   }
   console.log(`Proje: ${seedData.projects.length} kayıt hazır.`);
+
+  if (seedData.about) {
+    await prisma.aboutContent.upsert({
+      where: { id: 'about' },
+      create: { id: 'about', dataTr: seedData.about.dataTr, dataEn: seedData.about.dataEn },
+      update: { dataTr: seedData.about.dataTr, dataEn: seedData.about.dataEn },
+    });
+    console.log('Hakkımda: hazır.');
+  }
 }
 
 main()

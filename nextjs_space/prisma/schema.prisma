@@ -118,3 +118,10 @@ model ContactMessage {
   @@index([isRead])
   @@index([createdAt])
 }
+
+model AboutContent {
+  id        String   @id @default("about")
+  dataTr    Json
+  dataEn    Json
+  updatedAt DateTime @updatedAt
+}

@@ -3,12 +3,13 @@
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
-import { FileText, FolderKanban, Home, Images, LogOut, Mail, UserRound } from 'lucide-react';
+import { FileText, FolderKanban, Home, Images, LogOut, Mail, UserRound, Info } from 'lucide-react';
 
 const items = (locale: string, labels: Record<string, string>) => [
   { href: `/${locale}/admin`, label: labels.dashboard, icon: Home },
   { href: `/${locale}/admin/ozgecmis`, label: labels.resume, icon: UserRound },
   { href: `/${locale}/admin/makaleler`, label: labels.articles, icon: FileText },
+  { href: `/${locale}/admin/hakkimda`, label: labels.about, icon: Info },
   { href: `/${locale}/admin/projeler`, label: labels.projects, icon: FolderKanban },
   { href: `/${locale}/admin/galeri`, label: labels.gallery, icon: Images },
   { href: `/${locale}/admin/mesajlar`, label: labels.messages, icon: Mail },

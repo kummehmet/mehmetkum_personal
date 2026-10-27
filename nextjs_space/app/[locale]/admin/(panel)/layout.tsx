@@ -31,6 +31,7 @@ export default async function AdminPanelLayout({
           labels={{
             dashboard: t.admin.dashboard,
             resume: t.admin.resume,
+            about: t.admin.about,
             articles: t.admin.articles,
             projects: t.admin.projects,
             gallery: t.admin.gallery,

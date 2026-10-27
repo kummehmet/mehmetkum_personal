@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getMessages, isLocale } from '@/lib/i18n';
-import { listProjects, listResume, pick } from '@/lib/content';
+import { getAbout, listProjects, listResume, pick } from '@/lib/content';
 import { SiteHero } from '@/components/lusion/site-hero';
 import { WorkIndex } from '@/components/lusion/work-index';
 import { AboutStrip } from '@/components/lusion/about-strip';
@@ -13,7 +13,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   if (!isLocale(locale)) notFound();
   const t = await getMessages(locale);
 
-  const [projects, resume] = await Promise.all([listProjects(), listResume()]);
+  const [projects, resume, aboutPair] = await Promise.all([listProjects(), listResume(), getAbout()]);
+  const aboutSource = locale === 'en' ? (aboutPair?.dataEn ?? null) : (aboutPair?.dataTr ?? null);
+  const about = aboutSource ? { ...t.about, ...aboutSource } : t.about;
 
   const year = (value: string | null) => (value ? new Date(value).getFullYear() : null);
   const rows: StoryRow[] = resume.map((entry) => ({
@@ -30,7 +32,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <PageAtmosphere />
       <SiteHero locale={locale} t={t} />
       <WorkIndex locale={locale} t={t} projects={projects} />
-      <AboutStrip locale={locale} t={t} />
+      <AboutStrip locale={locale} t={t} about={about} />
       <StoryList t={t} rows={rows} />
       <WorkTogether locale={locale} t={t} />
     </>

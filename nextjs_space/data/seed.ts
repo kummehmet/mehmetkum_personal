@@ -697,4 +697,39 @@ Management is that same discipline at scale: instead of making every decision al
       createdAt: '2026-02-19T11:40:00.000Z',
     },
   ],
+
+  about: {
+    dataTr: {
+      eyebrow: 'Hakkımda',
+      title: 'Kodun, yangının ve şehir yönetiminin kesişiminde bir mühendislik pratiği.',
+      cta: 'Özgeçmişi incele',
+      body: [
+        "2005'te Hacettepe Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum; 2008'de Ankara Büyükşehir Belediyesi İtfaiyesi'ne katıldım. Yaklaşık on yıl süren itfaiyecilik dönemi, ekiplerin kurulması, operasyonların yürütülmesi ve acil durumlarda karar sorumluluğuyla geçti.",
+        "2018'de ASKİ Genel Müdürlüğü'ne geçtim. Programcı ve proje yönetici olarak başlayan ASKİ kariyerimin Şube Müdürlüğü ve Daire Başkanlığı dönemlerinde su ve atıksu altyapısının yönetimi, kurumun operasyonel dönüşümü ve dijitalleşme süreçleri gündemin merkezindeydi. Bugün ASKİ'de Kıdemli Uzman olarak çalışıyorum.",
+        "Bu yıllar boyunca yazılım da sürdü. İPEK Baca CRM ve SimaLogistic SaaS, sahadan gelen ihtiyaçların doğrudan ürüne dönüşmesiyle ortaya çıktı.",
+      ],
+      stats: [
+        { value: 18, suffix: '+', label: 'Yıl Kamu Sektörü' },
+        { value: 9, suffix: '+', label: 'Yıl İtfaiye Yönetimi' },
+        { value: 7, suffix: '+', label: 'Yıl ASKİ Yönetimi' },
+        { value: 4, suffix: '', label: 'Yayında SaaS Ürün' },
+      ],
+    },
+    dataEn: {
+      eyebrow: 'About',
+      title: 'An engineering practice where code, fire and city management meet.',
+      cta: 'Read the resume',
+      body: [
+        "I graduated from Hacettepe University in Computer Engineering in 2005 and joined the Ankara Metropolitan Municipality Fire Department in 2008. Nearly a decade of firefighting followed: building teams, running operations and carrying decision responsibility in emergencies.",
+        "In 2018 I moved to ASKI, the city's water and wastewater utility. In the branch-management and department-head years of the ASKİ career that started as a programmer and project manager, water and wastewater infrastructure, operational transformation and digitalisation were at the centre of the agenda. Today I serve as a Senior Specialist at ASKI.",
+        "Software continued alongside all of this. İPEK Baca CRM and SimaLogistic SaaS emerged from turning field needs directly into product.",
+      ],
+      stats: [
+        { value: 18, suffix: '+', label: 'Years in Public Sector' },
+        { value: 9, suffix: '+', label: 'Years Leading Fire Ops' },
+        { value: 7, suffix: '+', label: 'Years in ASKI Leadership' },
+        { value: 4, suffix: '', label: 'SaaS Products Live' },
+      ],
+    },
+  },
 };

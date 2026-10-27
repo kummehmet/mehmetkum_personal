@@ -2,6 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { getPrisma } from '@/lib/db';
 import { readLocal, writeLocal } from '@/lib/local-store';
 import type {
+  AboutContent,
   Article,
   ArticleInput,
   ContactMessage,
@@ -14,6 +15,8 @@ import type {
 } from '@/lib/content-types';
 
 export type { Article, ContactMessage, GalleryImage, Project, ResumeEntry };
+
+export type AboutPair = { dataTr: AboutContent; dataEn: AboutContent };
 
 const hasDatabase = () => Boolean(process.env.DATABASE_URL);
 
@@ -327,6 +330,42 @@ export async function deleteProject(id: string): Promise<void> {
   const db = await readLocal();
   db.projects = db.projects.filter((item) => item.id !== id);
   await writeLocal(db);
+}
+
+/* --------------------------------- Hakkımda --------------------------------- */
+
+export async function getAbout(): Promise<AboutPair | null> {
+  if (hasDatabase()) {
+    try {
+      const row = await getPrisma().aboutContent.findUnique({ where: { id: 'about' } });
+      if (row) {
+        return { dataTr: row.dataTr as AboutContent, dataEn: row.dataEn as AboutContent };
+      }
+    } catch {
+      // Tablo henüz yoksa mesaj dosyasındaki varsayılana düş.
+      return null;
+    }
+  }
+  const db = await readLocal();
+  return db.about ?? null;
+}
+
+export async function saveAbout(pair: AboutPair): Promise<AboutPair> {
+  const data = { dataTr: pair.dataTr, dataEn: pair.dataEn };
+
+  if (hasDatabase()) {
+    const row = await getPrisma().aboutContent.upsert({
+      where: { id: 'about' },
+      update: data,
+      create: { id: 'about', ...data },
+    });
+    return { dataTr: row.dataTr as AboutContent, dataEn: row.dataEn as AboutContent };
+  }
+
+  const db = await readLocal();
+  db.about = data;
+  await writeLocal(db);
+  return data;
 }
 
 /* --------------------------------- Mesajlar -------------------------------- */
