@@ -217,7 +217,7 @@ Sahadan yazılıma giden bu yol, kamu kurumlarında neden bu kadar zor? Çünkü
       locale: 'tr',
       category: 'TECH',
       tags: ['Kurumsal Yazılım', 'Saha Operasyonu', 'Veri Modeli'],
-      coverImage: '/images/cover-01.svg',
+      coverImage: '/images/covers/article-1.svg',
       published: true,
       readMinutes: 7,
       createdAt: '2026-02-11T09:00:00.000Z',
@@ -261,7 +261,7 @@ Bu harita çıkarıldıktan sonra, veri modeli neredeyse kendiliğinden belirir.
       locale: 'tr',
       category: 'PUBLIC_ADMIN',
       tags: ['Dijitalleşme', 'Yönetim', 'Saha', 'İletişim'],
-      coverImage: '/images/cover-02.svg',
+      coverImage: '/images/covers/article-2.svg',
       published: true,
       readMinutes: 6,
       createdAt: '2026-01-22T09:00:00.000Z',
@@ -304,7 +304,7 @@ Bu çerçeveyi kendi kurumuna taşımak, sahada komuta etmekten zordur. Yangınd
       locale: 'tr',
       category: 'FIRE',
       tags: ['Komuta', 'Acil Durum', 'Yönetim'],
-      coverImage: '/images/cover-03.svg',
+      coverImage: '/images/covers/article-3.svg',
       published: true,
       readMinutes: 8,
       createdAt: '2025-12-09T09:00:00.000Z',
@@ -347,7 +347,7 @@ Bunu söylemek zor ama önemli: bir hata düzeltmesi, yeni bir özellik kadar de
       locale: 'tr',
       category: 'TECH',
       tags: ['SaaS', 'Ürün Yönetimi', 'Teknik Borç'],
-      coverImage: '/images/cover-04.svg',
+      coverImage: '/images/covers/article-4.svg',
       published: true,
       readMinutes: 5,
       createdAt: '2025-11-04T09:00:00.000Z',
@@ -355,14 +355,14 @@ Bunu söylemek zor ama önemli: bir hata düzeltmesi, yeni bir özellik kadar de
     },
     {
       id: 'article-5',
-      slug: 'muhendis-programci-itfaiyeci-yonetici',
-      titleTr: 'Mühendis, programcı, itfaiyeci, yönetici',
-      titleEn: 'Engineer, programmer, firefighter, manager',
+      slug: 'farkli-disiplinler-ayni-pratikler',
+      titleTr: 'Farklı Disiplinler - Aynı Pratikler',
+      titleEn: 'Different Disciplines, Same Practices',
       summaryTr:
-        'Beş kimlik, tek disiplin: belirsizlik altında karar vermek ve sonucunu taşımak. Kişisel bir deneme.',
+        'Dört kimlik, tek disiplin: belirsizlik altında karar vermek ve sonucunu taşımak. Kişisel bir deneme.',
       summaryEn:
-        'Five identities, one discipline: deciding under uncertainty and carrying the result. A personal essay.',
-      contentTr: `Yirmi yıldır aynı mesleğin beş yüzünü yaşıyorum: mühendis, programcı, itfaiyeci, acil durum tecrübelisi ve yönetici. İsimler farklı görünse de işin özü aynı: belirsizlik altında karar vermek ve sonucunu taşımak. Aralarındaki tek fark, kararın bedelidir.
+        'Four identities, one discipline: deciding under uncertainty and carrying the result. A personal essay.',
+      contentTr: `Yirmi yıldır aynı amacın farklı yüzlerini yaşıyorum: mühendis, programcı, itfaiyeci ve yönetici. Aralarındaki tek fark, kararın bedelidir.
 
 ## Mühendis olmak
 
@@ -376,26 +376,38 @@ Programcılık, bu düzenin en somut halidir. Kod, niyetin çalıştırılabilir
 
 İtfaiyecilik, aynı düzeni en pahalı ortamda uygulamaktır. Zaman azdır, bilgi eksiktir, yanlışın bedeli geri alınamaz. Sahada belirsizliği azaltmanın tek yolu alışkanlık ve yazılı prosedürdür: komut net, adım belli, kontroller listeli. Karar sürpriz olmamalı; alışkanlık olmalıdır.
 
-## Acil durum tecrübesi olmak
-
-Acil durum tecrübesi olmak, bu alışkanlığı gerçekle sınamaktır. Tatbikatta hata bedava, gerçekte pahalıdır. Her olayın ardından üç soru sorulur: ne işe yaradı, ne yaramadı, hangi bilgi kaç dakikada ulaştı? Raporu olmayan olay unutulur; raporlanan olay alışkanlığa döner.
-
 ## Yönetici olmak
 
 Yöneticilik, aynı düzenin ölçek büyütmesidir: kararları tek başına vermek yerine rolleri dağıtmaktır. Kim karar verir, kim uygular, kim ölçer, kim rapor eder. Kriz anında kurumdan istenen, sahada ekipten istenenle aynıdır: net komut, yazılı rol, zamanında rapor.
 
-Beş kimliği bir arada tutmanın yolu da bu: ölçmeyi mühendislikten, kararı programcılıktan, disiplini itfaiyecilikten, sınama ve iyileştirmeyi acil durum tecrübesinden, paylaşmayı yöneticilikten almak.
+*Özünde ve aslında her bir rol, bir diğerine girdi sağlayarak çıktıyı zenginleştirir. Fakat kendi geçmiş rollerimizle bile empati yapmayı unutabiliyoruz. Empatiyi kaybetmediğimizde değişim gelişime dönüşebiliyor.*`,
+      contentEn: `For twenty years I have been living different faces of the same purpose: engineer, programmer, firefighter and manager. The only difference between them is the cost of a decision.
 
-Bu sitede gördüklerin, bu beş disiplinin aynı anda çalıştığı yerdir.`,
-      contentEn: null,
+## Being an engineer
+
+Engineering is, before building anything, a discipline of thinking. First map the boundaries of the problem: what do we know, what do we not know, what can we learn? Then set up the smallest possible experiment: measure, evaluate, correct the hypothesis when it fails. Even a false test result is valuable, because it teaches something. An untested assumption teaches nothing.
+
+## Being a programmer
+
+Programming is the most concrete form of that discipline. Code is intention in executable form; you make the decision first in your mind, then pour it into lines. The machine never deviates from what is written. That is why a system that does not measure produces guesses, not decisions; where measurement is missing, there is no correction either.
+
+## Being a firefighter
+
+Firefighting is applying the same discipline in the most expensive environment. Time is short, information is scarce, and the cost of a mistake cannot be undone. In the field, the only way to reduce uncertainty is habit and written procedure: a clear command, a defined step, listed checks. A decision should not come as a surprise; it should come as a habit.
+
+## Being a manager
+
+Management is that same discipline at scale: instead of making every decision alone, you distribute the roles. Who decides, who implements, who measures, who reports. What an organisation is asked for in a crisis is what a team is asked for in the field: a clear command, a written role, on-time reporting.
+
+*At the core, each role feeds the others and enriches the output. Yet we forget to empathise even with our own past roles. When we do not lose that empathy, change turns into improvement.*`,
       locale: 'tr',
       category: 'PERSONAL',
       tags: ['Kişisel', 'Mühendislik', 'Yazılım', 'Yönetim'],
-      coverImage: '/images/cover-05.svg',
+      coverImage: '/images/covers/article-5.svg',
       published: true,
-      readMinutes: 5,
+      readMinutes: 4,
       createdAt: '2025-10-02T09:00:00.000Z',
-      updatedAt: '2026-10-27T09:00:00.000Z',
+      updatedAt: '2026-10-27T10:00:00.000Z',
     },
   ],
 

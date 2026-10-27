@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs><radialGradient id="a1" cx="50%" cy="88%" r="75%">
+    <stop offset="0%" stop-color="#FF4500" stop-opacity="0.5"/>
+    <stop offset="55%" stop-color="#FF4500" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#FF4500" stop-opacity="0"/>
+  </radialGradient><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>
+  <rect width="1600" height="900" fill="#08090c"/>
+  <rect width="1600" height="900" fill="url(#a1)"/>
+  <text x="120" y="140" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="64" fill="rgba(240,231,219,0.92)">Sahadan doğan kod</text>
+  <rect x="80" y="180" width="820" height="470" rx="20" fill="#0d0f14" stroke="rgba(255,255,255,0.12)"/>
+  <circle cx="118" cy="216" r="7" fill="rgba(255,90,31,0.9)"/>
+  <circle cx="142" cy="216" r="7" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="166" cy="216" r="7" fill="rgba(255,255,255,0.18)"/>
+  <rect x="112" y="252" width="458" height="298" rx="8" fill="none" stroke="rgba(255,255,255,0.06)"/>
+  <rect x="120" y="212" width="210" height="22" rx="6" fill="rgba(240,231,219,0.30)"/>
+  <rect x="120" y="276" width="330" height="22" rx="6" fill="rgba(240,231,219,0.22)"/>
+  <rect x="120" y="340" width="260" height="22" rx="6" fill="rgba(255,90,31,0.95)"/>
+  <rect x="120" y="404" width="440" height="22" rx="6" fill="rgba(240,231,219,0.26)"/>
+  <rect x="120" y="468" width="170" height="22" rx="6" fill="rgba(240,231,219,0.20)"/>
+  <rect x="120" y="532" width="390" height="22" rx="6" fill="rgba(240,231,219,0.24)"/>
+  <rect x="120" y="554" width="18" height="30" fill="#ff5a1f"/>
+  <rect x="1150" y="252" width="104" height="52" rx="26" fill="none" stroke="rgba(240,231,219,0.35)"/>
+    <text x="1202" y="285" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="2" text-anchor="middle" fill="rgba(240,231,219,0.8)">ÇAĞRI</text>
+    <path d="M1254 278 h 52 m -14 -8 l 14 8 l -14 8" stroke="rgba(255,90,31,0.9)" stroke-width="2.5" fill="none"/>
+  <rect x="1280" y="252" width="104" height="52" rx="26" fill="none" stroke="rgba(240,231,219,0.35)"/>
+    <text x="1332" y="285" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="2" text-anchor="middle" fill="rgba(240,231,219,0.8)">EKİP</text>
+    <path d="M1384 278 h 52 m -14 -8 l 14 8 l -14 8" stroke="rgba(255,90,31,0.9)" stroke-width="2.5" fill="none"/>
+  <rect x="1410" y="252" width="104" height="52" rx="26" fill="none" stroke="rgba(240,231,219,0.35)"/>
+    <text x="1462" y="285" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="2" text-anchor="middle" fill="rgba(240,231,219,0.8)">EKRAN</text>
+    
+  <text x="120" y="610" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="2" fill="rgba(255,90,31,0.95)">type FireCall = ceremony of field</text>
+  <rect width="1600" height="900" filter="url(#grain)" opacity="0.13"/>
+  <rect x="0.5" y="0.5" width="1599" height="899" stroke="rgba(255,255,255,0.08)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="40" y="72" font-size="15" letter-spacing="6" fill="rgba(255,255,255,0.35)">MEHMET KUM</text>
+    <text x="1560" y="72" font-size="15" letter-spacing="4" text-anchor="end" fill="rgba(255,255,255,0.3)">MAKALE</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="40" y="844" font-size="20" letter-spacing="6" fill="rgba(240,231,219,0.85)">İTFAİYENİN DİLİ</text>
+    <text x="40" y="874" font-size="14" letter-spacing="3" fill="rgba(255,255,255,0.25)">OLAY → KARAR → EKRAN</text>
+  </g>
+</svg>

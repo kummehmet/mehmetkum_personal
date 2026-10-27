@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs><radialGradient id="a4" cx="50%" cy="30%" r="75%">
+    <stop offset="0%" stop-color="#FF4500" stop-opacity="0.5"/>
+    <stop offset="55%" stop-color="#FF4500" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#FF4500" stop-opacity="0"/>
+  </radialGradient><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>
+  <rect width="1600" height="900" fill="#08090c"/>
+  <rect x="0" y="0" width="1600" height="900" fill="url(#a4)" opacity="0.45"/>
+  <text x="120" y="152" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="58" fill="rgba(240,231,219,0.92)">Borç büyümeden görün</text>
+  <text x="120" y="200" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="3" fill="rgba(240,231,219,0.45)">TEKNİK BORÇ DEFTERİ</text>
+  <rect x="120" y="236" width="333" height="30" rx="8" fill="rgba(240,231,219,0.1)"/>
+    <rect x="465" y="244" width="96" height="14" rx="7" fill="rgba(255,90,31,0.75)"/><rect x="120" y="288" width="470" height="30" rx="8" fill="rgba(240,231,219,0.112)"/>
+    <rect x="602" y="296" width="96" height="14" rx="7" fill="rgba(255,90,31,0.75)"/><rect x="120" y="340" width="260" height="30" rx="8" fill="rgba(240,231,219,0.124)"/>
+    <rect x="392" y="348" width="96" height="14" rx="7" fill="rgba(255,90,31,0.75)"/><rect x="120" y="392" width="590" height="30" rx="8" fill="rgba(240,231,219,0.136)"/>
+    <rect x="722" y="400" width="96" height="14" rx="7" fill="rgba(255,90,31,0.75)"/><rect x="120" y="444" width="380" height="30" rx="8" fill="rgba(240,231,219,0.14800000000000002)"/>
+    <rect x="512" y="452" width="96" height="14" rx="7" fill="rgba(255,90,31,0.75)"/><rect x="120" y="496" width="300" height="30" rx="8" fill="rgba(240,231,219,0.16)"/>
+    <rect x="432" y="504" width="96" height="14" rx="7" fill="rgba(255,90,31,0.75)"/><rect x="120" y="548" width="520" height="30" rx="8" fill="rgba(240,231,219,0.17200000000000001)"/>
+    <rect x="652" y="556" width="96" height="14" rx="7" fill="rgba(255,90,31,0.75)"/>
+  <circle cx="1235" cy="430" r="152" stroke="rgba(255,255,255,0.08)" fill="#0d0f14"/>
+  <path d="M 1235 312 A 118 118 0 1 1 1235.0 312.0" stroke="rgba(255,255,255,0.10)" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <path d="M 1235 312 A 118 118 0 0 1 1347.2 393.5" stroke="#ff5a1f" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <text x="1235" y="422" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="62" text-anchor="middle" fill="rgba(240,231,219,0.95)">%20</text>
+  <text x="1235" y="460" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="2" text-anchor="middle" fill="rgba(240,231,219,0.5)">BAKIM PAYI</text>
+  <text x="120" y="660" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="2" fill="rgba(240,231,219,0.55)">"Yanlış sıra, bir çeyrek yıl kaybettirir."</text>
+  <rect width="1600" height="900" filter="url(#grain)" opacity="0.13"/>
+  <rect x="0.5" y="0.5" width="1599" height="899" stroke="rgba(255,255,255,0.08)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="40" y="72" font-size="15" letter-spacing="6" fill="rgba(255,255,255,0.35)">MEHMET KUM</text>
+    <text x="1560" y="72" font-size="15" letter-spacing="4" text-anchor="end" fill="rgba(255,255,255,0.3)">MAKALE</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="40" y="844" font-size="20" letter-spacing="6" fill="rgba(240,231,219,0.85)">ÜRÜN ÖNCELİKLENDİRME</text>
+    <text x="40" y="874" font-size="14" letter-spacing="3" fill="rgba(255,255,255,0.25)">ETKİ · KANIT · MALİYET · RİSK</text>
+  </g>
+</svg>

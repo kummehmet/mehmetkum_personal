@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs><radialGradient id="a3" cx="50%" cy="100%" r="75%">
+    <stop offset="0%" stop-color="#FF4500" stop-opacity="0.5"/>
+    <stop offset="55%" stop-color="#FF4500" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#FF4500" stop-opacity="0"/>
+  </radialGradient><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>
+  <rect width="1600" height="900" fill="#08090c"/>
+  <rect width="1600" height="900" fill="url(#a3)" opacity="0.55"/>
+  <text x="120" y="150" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="60" fill="rgba(240,231,219,0.92)">İlk saat, sonraki her şeyi belirler</text>
+  <rect x="140" y="400" width="216" height="240" rx="10" fill="#0d0f14" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="140" y="400" width="216" height="240" rx="10" fill="url(#a3)" opacity="0.12"/>
+    <text x="248" y="446" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="34" text-anchor="middle" fill="rgba(240,231,219,0.95)">0–5</text>
+    <text x="248" y="474" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="2" text-anchor="middle" fill="rgba(240,231,219,0.45)">DAKİKA</text>
+  <rect x="412" y="310" width="216" height="330" rx="10" fill="#0d0f14" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="412" y="310" width="216" height="330" rx="10" fill="url(#a3)" opacity="0.18"/>
+    <text x="520" y="356" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="34" text-anchor="middle" fill="rgba(240,231,219,0.95)">5–15</text>
+    <text x="520" y="384" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="2" text-anchor="middle" fill="rgba(240,231,219,0.45)">DAKİKA</text>
+  <rect x="684" y="215" width="216" height="425" rx="10" fill="#0d0f14" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="684" y="215" width="216" height="425" rx="10" fill="url(#a3)" opacity="0.24"/>
+    <text x="792" y="261" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="34" text-anchor="middle" fill="rgba(240,231,219,0.95)">15–30</text>
+    <text x="792" y="289" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="2" text-anchor="middle" fill="rgba(240,231,219,0.45)">DAKİKA</text>
+  <rect x="956" y="288" width="216" height="352" rx="10" fill="#0d0f14" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="956" y="288" width="216" height="352" rx="10" fill="url(#a3)" opacity="0.30"/>
+    <text x="1064" y="334" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="34" text-anchor="middle" fill="rgba(240,231,219,0.95)">30–45</text>
+    <text x="1064" y="362" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="2" text-anchor="middle" fill="rgba(240,231,219,0.45)">DAKİKA</text>
+  <rect x="1228" y="140" width="216" height="500" rx="10" fill="#0d0f14" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="1228" y="140" width="216" height="500" rx="10" fill="url(#a3)" opacity="0.36"/>
+    <text x="1336" y="186" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="34" text-anchor="middle" fill="rgba(240,231,219,0.95)">45–60</text>
+    <text x="1336" y="214" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="2" text-anchor="middle" fill="rgba(240,231,219,0.45)">DAKİKA</text>
+  <text x="248" y="700" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="3" text-anchor="middle" fill="rgba(240,231,219,0.5)">KOMUTA</text>
+  <text x="520" y="700" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="3" text-anchor="middle" fill="rgba(240,231,219,0.5)">OPERASYON</text>
+  <text x="792" y="700" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="3" text-anchor="middle" fill="rgba(240,231,219,0.5)">PLANLAMA</text>
+  <text x="1064" y="700" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="3" text-anchor="middle" fill="rgba(240,231,219,0.5)">LOJİSTİK</text>
+  <text x="1336" y="700" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="3" text-anchor="middle" fill="rgba(240,231,219,0.5)">RAPOR</text>
+  <line x1="120" y1="742" x2="1480" y2="742" stroke="rgba(255,90,31,0.6)" stroke-width="3"/>
+  <text x="1480" y="778" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="30" text-anchor="end" fill="#ff5a1f">0 → 60 dk</text>
+  <rect width="1600" height="900" filter="url(#grain)" opacity="0.13"/>
+  <rect x="0.5" y="0.5" width="1599" height="899" stroke="rgba(255,255,255,0.08)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="40" y="72" font-size="15" letter-spacing="6" fill="rgba(255,255,255,0.35)">MEHMET KUM</text>
+    <text x="1560" y="72" font-size="15" letter-spacing="4" text-anchor="end" fill="rgba(255,255,255,0.3)">MAKALE</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="40" y="844" font-size="20" letter-spacing="6" fill="rgba(240,231,219,0.85)">KOMUTA YAPISI</text>
+    <text x="40" y="874" font-size="14" letter-spacing="3" fill="rgba(255,255,255,0.25)">RÜZGÂR, SU, EKİP — TEK SIRA</text>
+  </g>
+</svg>

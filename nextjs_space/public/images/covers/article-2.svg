@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs><radialGradient id="a2o" cx="50%" cy="20%" r="75%">
+    <stop offset="0%" stop-color="#FF4500" stop-opacity="0.5"/>
+    <stop offset="55%" stop-color="#FF4500" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#FF4500" stop-opacity="0"/>
+  </radialGradient><radialGradient id="a2b" cx="50%" cy="20%" r="75%">
+    <stop offset="0%" stop-color="#0ea5b7" stop-opacity="0.5"/>
+    <stop offset="55%" stop-color="#0ea5b7" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#0ea5b7" stop-opacity="0"/>
+  </radialGradient><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>
+  <rect width="1600" height="900" fill="#08090c"/>
+  <rect x="0" y="0" width="800" height="900" fill="url(#a2o)" opacity="0.6"/>
+  <rect x="800" y="0" width="800" height="900" fill="url(#a2b)" opacity="0.55"/>
+  <text x="120" y="150" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="58" fill="rgba(240,231,219,0.92)">İki hız, tek sistem</text>
+  <rect x="120" y="330" width="200" height="58" rx="12" fill="#0d0f14" stroke="rgba(255,90,31,0.85)"/>
+  <text x="220" y="366" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="1" text-anchor="middle" fill="rgba(240,231,219,0.92)">SAHA EKİBİ</text>
+  <rect x="120" y="430" width="200" height="58" rx="12" fill="#0d0f14" stroke="rgba(255,90,31,0.85)"/>
+  <text x="220" y="466" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="1" text-anchor="middle" fill="rgba(240,231,219,0.92)">FORM</text>
+  <rect x="120" y="530" width="200" height="58" rx="12" fill="#0d0f14" stroke="rgba(255,90,31,0.85)"/>
+  <text x="220" y="566" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="1" text-anchor="middle" fill="rgba(240,231,219,0.92)">FOTOĞRAF</text>
+  <rect x="1280" y="330" width="200" height="58" rx="12" fill="#0d0f14" stroke="rgba(14,165,183,0.85)"/>
+  <text x="1380" y="366" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="1" text-anchor="middle" fill="rgba(240,231,219,0.92)">RAPOR</text>
+  <rect x="1280" y="430" width="200" height="58" rx="12" fill="#0d0f14" stroke="rgba(14,165,183,0.85)"/>
+  <text x="1380" y="466" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="1" text-anchor="middle" fill="rgba(240,231,219,0.92)">ONAY</text>
+  <rect x="1280" y="530" width="200" height="58" rx="12" fill="#0d0f14" stroke="rgba(14,165,183,0.85)"/>
+  <text x="1380" y="566" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="1" text-anchor="middle" fill="rgba(240,231,219,0.92)">PANO</text>
+  <path d="M330 359 C 470 359, 480 220, 560 220 C 650 220, 660 386, 742 386" stroke="rgba(255,90,31,0.75)" stroke-width="2.5" fill="none" stroke-dasharray="10 8"/>
+  <path d="M330 559 C 470 559, 480 696, 560 696 C 650 696, 660 530, 742 530" stroke="rgba(255,90,31,0.5)" stroke-width="2" fill="none" stroke-dasharray="10 8"/>
+  <path d="M1270 359 C 1130 359, 1120 220, 1040 220 C 950 220, 940 386, 858 386" stroke="rgba(14,165,183,0.75)" stroke-width="2.5" fill="none" stroke-dasharray="10 8"/>
+  <path d="M1270 559 C 1130 559, 1120 696, 1040 696 C 950 696, 940 530, 858 530" stroke="rgba(14,165,183,0.5)" stroke-width="2" fill="none" stroke-dasharray="10 8"/>
+  <path d="M795 240 l 38 96 l -30 6 l 48 120 l -30 8 l 52 132" stroke="rgba(255,90,31,0.95)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="800" y="446" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="4" text-anchor="middle" fill="rgba(240,231,219,0.85)">SÜRTÜŞME</text>
+  <rect width="1600" height="900" filter="url(#grain)" opacity="0.13"/>
+  <rect x="0.5" y="0.5" width="1599" height="899" stroke="rgba(255,255,255,0.08)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="40" y="72" font-size="15" letter-spacing="6" fill="rgba(255,255,255,0.35)">MEHMET KUM</text>
+    <text x="1560" y="72" font-size="15" letter-spacing="4" text-anchor="end" fill="rgba(255,255,255,0.3)">MAKALE</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="40" y="844" font-size="20" letter-spacing="6" fill="rgba(240,231,219,0.85)">SAHA ↔ OFİS</text>
+    <text x="40" y="874" font-size="14" letter-spacing="3" fill="rgba(255,255,255,0.25)">AYNI İŞ, İKİ HIZ</text>
+  </g>
+</svg>

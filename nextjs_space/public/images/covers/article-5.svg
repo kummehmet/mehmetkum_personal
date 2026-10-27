@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs><radialGradient id="a5" cx="50%" cy="55%" r="75%">
+    <stop offset="0%" stop-color="#FF4500" stop-opacity="0.5"/>
+    <stop offset="55%" stop-color="#FF4500" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#FF4500" stop-opacity="0"/>
+  </radialGradient><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>
+  <rect width="1600" height="900" fill="#08090c"/>
+  <rect width="1600" height="900" fill="url(#a5)" opacity="0.5"/>
+  <text x="800" y="150" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-weight="800" font-size="58" text-anchor="middle" fill="rgba(240,231,219,0.92)">Dört kimlik, tek disiplin</text>
+  <circle cx="705" cy="375" r="105" stroke="rgba(255,90,31,0.5)" stroke-width="2" fill="none"/>
+  <circle cx="895" cy="375" r="105" stroke="rgba(255,90,31,0.5)" stroke-width="2" fill="none"/>
+  <circle cx="705" cy="565" r="105" stroke="rgba(255,90,31,0.5)" stroke-width="2" fill="none"/>
+  <circle cx="895" cy="565" r="105" stroke="rgba(255,90,31,0.5)" stroke-width="2" fill="none"/>
+  <circle cx="800" cy="470" r="86" fill="#ff5a1f" opacity="0.16"/>
+  <circle cx="800" cy="470" r="86" stroke="#ff5a1f" stroke-width="2.5" fill="none"/>
+  <text x="800" y="464" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="3" text-anchor="middle" fill="rgba(240,231,219,0.95)">AYNI</text>
+  <text x="800" y="492" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="3" text-anchor="middle" fill="rgba(240,231,219,0.95)">PRATİK</text>
+  <text x="535" y="211" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="3" text-anchor="middle" fill="rgba(240,231,219,0.75)">MÜHENDİS</text>
+  <text x="1065" y="211" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="3" text-anchor="middle" fill="rgba(240,231,219,0.75)">PROGRAMCI</text>
+  <text x="535" y="741" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="3" text-anchor="middle" fill="rgba(240,231,219,0.75)">İTFAİYECİ</text>
+  <text x="1065" y="741" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="3" text-anchor="middle" fill="rgba(240,231,219,0.75)">YÖNETİCİ</text>
+  <text x="800" y="782" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="2" text-anchor="middle" fill="rgba(240,231,219,0.5)">ölç → karar ver → uygula → paylaş</text>
+  <rect width="1600" height="900" filter="url(#grain)" opacity="0.13"/>
+  <rect x="0.5" y="0.5" width="1599" height="899" stroke="rgba(255,255,255,0.08)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="40" y="72" font-size="15" letter-spacing="6" fill="rgba(255,255,255,0.35)">MEHMET KUM</text>
+    <text x="1560" y="72" font-size="15" letter-spacing="4" text-anchor="end" fill="rgba(255,255,255,0.3)">MAKALE</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="40" y="844" font-size="20" letter-spacing="6" fill="rgba(240,231,219,0.85)">FARKLI DİSİPLİNLER</text>
+    <text x="40" y="874" font-size="14" letter-spacing="3" fill="rgba(255,255,255,0.25)">AYNI PRATİKLER</text>
+  </g>
+</svg>
