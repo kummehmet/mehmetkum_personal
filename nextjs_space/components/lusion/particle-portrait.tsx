@@ -18,11 +18,11 @@ type Dot = {
 const SRC = '/images/photos/portre-01.jpg';
 
 const SPRITE_COLORS = [
-  'rgba(232, 239, 246, 1)',
-  'rgba(176, 188, 202, 1)',
-  'rgba(255, 255, 255, 1)',
-  'rgba(118, 130, 146, 1)',
-]; // Lusion team portreleri gibi monokrom kül tonları
+  'rgba(226, 233, 240, 1)',
+  'rgba(176, 186, 198, 1)',
+  'rgba(255, 122, 58, 1)',
+  'rgba(14, 165, 183, 1)',
+]; // ana küllü beyaz, ikincil gri, nadir kor/ateş ve su dokunuşu
 
 function rand(min: number, max: number) {
   return min + Math.random() * (max - min);
@@ -78,20 +78,29 @@ export function ParticlePortrait({ className }: { className?: string }) {
       canvas.height = Math.floor(height * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-      // Lusion team portrelerindeki gibi yüzü merkeze alan sıkı bir kırpma
+      // Kaynağı object-cover gibi kırpıp örnekle
       const sample = document.createElement('canvas');
-      const cols = Math.max(64, Math.round(width / 5));
-      const rows = Math.max(80, Math.round(height / 5));
+      const cols = Math.max(48, Math.round(width / 7));
+      const rows = Math.max(56, Math.round(height / 7));
       sample.width = cols;
       sample.height = rows;
       const sctx = sample.getContext('2d', { willReadFrequently: true });
       if (!sctx) return;
 
-      const cropW = Math.min(img.naturalWidth, img.naturalWidth * 0.68);
-      const cropH = Math.min(img.naturalHeight, cropW / (cols / rows));
-      const cropX = Math.max(0, Math.min(img.naturalWidth - cropW, img.naturalWidth * 0.5 - cropW / 2));
-      const cropY = Math.max(0, Math.min(img.naturalHeight - cropH, img.naturalHeight * 0.34 - cropH / 2));
-      sctx.drawImage(img, cropX, cropY, cropW, cropH, 0, 0, cols, rows);
+      const scale = Math.max(cols / img.naturalWidth, rows / img.naturalHeight);
+      const cropW = cols / scale;
+      const cropH = rows / scale;
+      sctx.drawImage(
+        img,
+        (img.naturalWidth - cropW) / 2,
+        (img.naturalHeight - cropH) / 2,
+        cropW,
+        cropH,
+        0,
+        0,
+        cols,
+        rows,
+      );
       const pixels = sctx.getImageData(0, 0, cols, rows).data;
 
       // Kenarlardan flood-fill ile fon maskesi: gradyanlı (mavi→beyaz→gri) fonu
@@ -129,7 +138,7 @@ export function ParticlePortrait({ className }: { className?: string }) {
           if (bgMask[nIdx]) return;
           const np = pxAt(ncol, nrow);
           const diff = Math.hypot(np[0] - cur[0], np[1] - cur[1], np[2] - cur[2]);
-          if (diff <= 22) {
+          if (diff <= 26) {
             bgMask[nIdx] = 1;
             queue.push(nIdx);
           }
@@ -145,7 +154,7 @@ export function ParticlePortrait({ className }: { className?: string }) {
       radius = Math.max(70, Math.min(240, width * 0.38));
 
       const next: Dot[] = [];
-      const grainScale = Math.max(2.4, Math.min(3.6, cellW));
+      const grainScale = Math.max(2.4, Math.min(4.6, cellW * 1.35));
       for (let row = 0; row < rows; row += 1) {
         for (let col = 0; col < cols; col += 1) {
           const i = (row * cols + col) * 4;
@@ -156,7 +165,7 @@ export function ParticlePortrait({ className }: { className?: string }) {
 
           const x = (col + 0.5) * cellW + rand(-1.1, 1.1);
           const y = (row + 0.5) * cellH + rand(-1.1, 1.1);
-          const brightness = Math.pow(lum / 255, 1.35);
+          const brightness = lum / 255;
           const roll = Math.random();
           next.push({
             x,
@@ -165,8 +174,8 @@ export function ParticlePortrait({ className }: { className?: string }) {
             hy: y,
             vx: 0,
             vy: 0,
-            r: (0.25 + brightness * 0.9) * grainScale,
-            alpha: 0.18 + brightness * 0.7,
+            r: (0.55 + brightness * 1.75) * grainScale,
+            alpha: 0.28 + brightness * 0.62,
             sprite: roll > 0.985 ? 2 : roll > 0.97 ? 3 : roll > 0.4 ? 0 : 1,
           });
         }
