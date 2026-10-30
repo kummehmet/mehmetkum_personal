@@ -31,7 +31,6 @@ export function WorkTogether({ locale, t }: { locale: Locale; t: Messages }) {
       <div className="relative z-10 mx-auto flex min-h-[85svh] w-full max-w-[1600px] flex-col justify-between px-6 pb-10 pt-20 md:px-10 lg:px-[72px]">
         <div className="flex items-start justify-between gap-6 font-mono text-[9px] uppercase tracking-[0.24em] text-white/30">
           <span>{t.home.together.eyebrow}</span>
-          <span className="hidden sm:block">{t.home.together.hint}</span>
         </div>
 
         <div className="flex flex-1 flex-col items-center justify-center py-10 text-center">
@@ -94,10 +93,6 @@ export function WorkTogether({ locale, t }: { locale: Locale; t: Messages }) {
             <span className="flex items-center gap-1.5">
               <span className="h-1 w-1 rounded-full bg-[#ff5a1f]" /> {t.home.together.fire}
             </span>
-          </span>
-          <span className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 animate-ping rounded-full bg-[#ff5a1f]" />
-            {t.home.together.clickHint}
           </span>
         </div>
       </div>

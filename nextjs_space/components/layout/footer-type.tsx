@@ -13,7 +13,7 @@ export function FooterType({ text }: { text: string }) {
     target: ref,
     offset: ['start end', 'end start'],
   });
-  const opacity = useTransform(scrollYProgress, [0, 0.7], [0.03, 0.11]);
+  const opacity = useTransform(scrollYProgress, [0, 0.7], [0.015, 0.05]);
   const y = useTransform(scrollYProgress, [0, 1], [12, -12]);
 
   return (

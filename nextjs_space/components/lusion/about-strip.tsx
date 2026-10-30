@@ -20,19 +20,49 @@ export function AboutStrip({
       id="hakkimda"
       className="relative scroll-mt-24 border-t border-white/10 bg-[#08090c] px-6 py-20 text-white md:px-10 lg:px-[72px] lg:py-28"
     >
-      <div className="mx-auto grid max-w-[1600px] gap-10 md:grid-cols-12">
-        <div className="md:col-span-4">
-          <div className="relative aspect-[4/5] overflow-hidden border border-white/10 bg-[#050608]">
+      <div className="mx-auto grid max-w-[1600px] gap-12 md:grid-cols-12">
+        <div className="md:col-span-5">
+          <div className="relative aspect-[4/5] overflow-hidden">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 bg-[radial-gradient(52%_42%_at_50%_36%,rgba(180,202,224,0.12),transparent_72%)]"
+            />
             <ParticlePortrait className="absolute inset-0" />
 
             <div
               aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-t from-[#08090c] via-transparent to-transparent"
+              className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-[#08090c] via-[#08090c]/55 to-transparent"
             />
+
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 400 200"
+              preserveAspectRatio="none"
+              fill="none"
+              className="absolute inset-x-0 bottom-0 h-[46%] w-full text-white/[0.14]"
+            >
+              <g stroke="currentColor" strokeWidth="0.7">
+                <path d="M-20 108 C 30 92, 80 120, 140 102 S 240 72, 300 94 S 370 118, 420 104" />
+                <path d="M-20 128 C 30 108, 80 142, 140 120 S 240 86, 300 112 S 370 140, 420 122" />
+                <path d="M-20 148 C 30 124, 80 164, 140 140 S 240 102, 300 132 S 370 164, 420 142" />
+                <path d="M-20 168 C 40 140, 90 186, 150 158 S 250 118, 310 150 S 380 184, 420 158" />
+                <path d="M-20 184 C 50 160, 100 198, 160 174 S 260 140, 320 168 S 380 196, 420 176" />
+              </g>
+            </svg>
+
+            <div className="absolute inset-x-0 bottom-0 z-10 p-5 md:p-6">
+              <div className="h-px w-12 bg-white/25" />
+              <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.24em] text-white/65">
+                Mehmet Kum
+              </p>
+              <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.18em] text-white/35">
+                {content.role}
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="md:col-span-8 lg:col-span-7 lg:col-start-6">
+        <div className="md:col-span-7 lg:col-span-6 lg:col-start-7">
           <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-white/35">{content.eyebrow}</p>
           <h2 className="mt-4 max-w-2xl font-display text-[clamp(1.6rem,3.4vw,2.8rem)] font-medium leading-[1.1] tracking-[-0.035em]">
             {content.title}

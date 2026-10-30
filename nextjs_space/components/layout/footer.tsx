@@ -18,11 +18,12 @@ export function Footer({ locale, t }: { locale: Locale; t: Messages }) {
 
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-black">
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[78%] bg-[radial-gradient(ellipse_78%_80%_at_50%_115%,rgba(255,77,0,0.34),rgba(255,90,31,0.12)_55%,transparent_72%)]" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[38%] bg-[radial-gradient(ellipse_55%_70%_at_50%_118%,rgba(255,140,64,0.4),transparent_75%)]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[85%] bg-[radial-gradient(ellipse_82%_82%_at_50%_115%,rgba(255,77,0,0.46),rgba(255,90,31,0.16)_55%,transparent_72%)]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[48%] bg-[radial-gradient(ellipse_60%_74%_at_50%_118%,rgba(255,140,64,0.52),transparent_75%)]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[22%] bg-[radial-gradient(ellipse_38%_60%_at_50%_122%,rgba(255,190,120,0.28),transparent_78%)]" />
 
-      <div className="relative mx-auto max-w-[1600px] px-6 py-20 md:px-10 lg:px-[72px] lg:py-24">
-        <div className="grid gap-14 lg:grid-cols-[1.1fr_1.45fr_1.45fr] lg:gap-10">
+      <div className="relative mx-auto max-w-[1720px] px-6 py-24 md:px-10 lg:px-16 lg:py-28">
+        <div className="grid gap-14 lg:grid-cols-[1fr_1.75fr_1.4fr] lg:gap-16">
           <div>
             <p className="max-w-sm text-sm leading-relaxed text-white/50">{t.footer.tagline}</p>
             <div className="mt-6 flex items-center gap-3">
@@ -30,20 +31,22 @@ export function Footer({ locale, t }: { locale: Locale; t: Messages }) {
             </div>
           </div>
 
-          <nav className="flex flex-col gap-4">
+          <nav className="flex flex-col gap-5">
             <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/30">
               {t.nav.menu}
             </span>
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="group flex w-fit items-center gap-1.5 text-[15px] leading-none text-white/70 transition-colors hover:text-white"
-              >
-                {link.label}
-                <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-100" />
-              </Link>
-            ))}
+            <div className="grid grid-cols-1 gap-x-10 gap-y-4 sm:grid-cols-2">
+              {links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="group flex w-fit items-center gap-1.5 text-[15px] leading-none text-white/70 transition-colors hover:text-white"
+                >
+                  {link.label}
+                  <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-100" />
+                </Link>
+              ))}
+            </div>
           </nav>
 
           <div className="flex flex-col gap-4">

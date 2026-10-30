@@ -31,7 +31,7 @@ function rand(min: number, max: number) {
 
 /**
  * Ana sayfanın tamamında çalışan atmosfer katmanı.
- * - Tıklama: yalnızca footer alanında (#birlikte + footer) su damlaları fışkırır.
+ * - Tıklama: yalnızca footer alanında su damlaları fışkırır.
  * - Basılı tutma: su akmaya devam eder.
  * - Alt kenar: sürekli ateş yanar.
  */
@@ -61,7 +61,7 @@ export function PageAtmosphere() {
     const isFooterZone = (x: number, y: number) => {
       const under = document.elementFromPoint(x, y);
       if (!under) return false;
-      return Boolean(under.closest('footer, #birlikte'));
+      return Boolean(under.closest('footer'));
     };
 
     const spawnDrop = (x: number, y: number): Drop => ({
@@ -78,11 +78,11 @@ export function PageAtmosphere() {
 
     const spawnFlame = (initial: boolean): Flame => ({
       x: rand(-20, width + 20),
-      y: initial ? rand(height - 92, height + 10) : height + rand(4, 30),
-      r: rand(14, 58),
-      speed: rand(0.7, 2.5),
+      y: initial ? rand(height - 110, height + 10) : height + rand(4, 30),
+      r: rand(18, 72),
+      speed: rand(0.7, 2.8),
       drift: rand(-0.45, 0.45),
-      alpha: rand(0.3, 0.75),
+      alpha: rand(0.38, 0.85),
       hue: rand(14, 38),
       phase: Math.random() * Math.PI * 2,
     });
@@ -97,7 +97,7 @@ export function PageAtmosphere() {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
       flames.length = 0;
-      const count = reduced ? 24 : Math.min(120, Math.round(width / 13));
+      const count = reduced ? 28 : Math.min(160, Math.round(width / 10));
       for (let i = 0; i < count; i += 1) flames.push(spawnFlame(true));
     };
 
@@ -105,12 +105,13 @@ export function PageAtmosphere() {
       ctx.save();
       ctx.globalCompositeOperation = 'source-over';
 
-      const bed = ctx.createLinearGradient(0, height - 180, 0, height);
+      const bedHeight = 220;
+      const bed = ctx.createLinearGradient(0, height - bedHeight, 0, height);
       bed.addColorStop(0, 'rgba(255, 90, 31, 0)');
-      bed.addColorStop(0.55, 'rgba(255, 90, 31, 0.08)');
-      bed.addColorStop(1, 'rgba(255, 106, 26, 0.3)');
+      bed.addColorStop(0.55, 'rgba(255, 90, 31, 0.13)');
+      bed.addColorStop(1, 'rgba(255, 106, 26, 0.44)');
       ctx.fillStyle = bed;
-      ctx.fillRect(0, height - 180, width, 180);
+      ctx.fillRect(0, height - bedHeight, width, bedHeight);
 
       ctx.globalCompositeOperation = 'lighter';
       for (const flame of flames) {
@@ -118,10 +119,10 @@ export function PageAtmosphere() {
           flame.y -= flame.speed;
           flame.x += flame.drift + Math.sin(time * 0.0012 + flame.phase) * 0.6;
           flame.phase += 0.02;
-          if (flame.y < height - 200) Object.assign(flame, spawnFlame(false));
+          if (flame.y < height - bedHeight) Object.assign(flame, spawnFlame(false));
         }
 
-        const fade = Math.max(0, Math.min(1, (flame.y - (height - 200)) / 200));
+        const fade = Math.max(0, Math.min(1, (flame.y - (height - bedHeight)) / bedHeight));
         const opacity = flame.alpha * fade;
         if (opacity <= 0.005) continue;
 
